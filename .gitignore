@@ -9,7 +9,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
-.slingshot
+.slingshot/
 
 # Distribution / packaging
 build/

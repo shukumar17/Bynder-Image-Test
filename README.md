@@ -1,85 +1,83 @@
 # Image Scraper and Screenshot Validator
 
-A Python-based automation tool that scrapes image URLs from web pages, validates them by taking screenshots, and generates Excel reports with the results.
+A simple Python tool that finds images on web pages, checks if they work, and creates Excel reports showing which images passed or failed.
 
-## 🚀 Quick Start for Teammates
+## 🚀 Getting Started
 
-### Prerequisites
-1. **Python 3.8 or higher** - [Download Python](https://www.python.org/downloads/)
+### What You Need
+1. **Python 3.8 or newer** - [Download Python](https://www.python.org/downloads/)
 2. **Google Chrome browser** - [Download Chrome](https://www.google.com/chrome/)
-3. **Git** (optional, for cloning) - [Download Git](https://git-scm.com/downloads/)
+3. **Git** (optional) - [Download Git](https://git-scm.com/downloads/)
 
-### Installation Steps
+### How to Install
 
-#### Option 1: Using Git (Recommended)
+#### Option 1: Download from GitHub (Easiest)
 ```bash
-# Clone the repository
-git clone <https://github.com/shukumar17/Bynder-Image-Test.git>
-cd image-scraper
+# Download the code
+git clone https://github.com/shukumar17/Bynder-Image-Test.git
+cd Bynder-Image-Test
 
-# Create virtual environment
+# Set up Python environment
 python -m venv venv
 
-# Activate virtual environment
+# Turn on the environment
 # On Windows:
 venv\Scripts\activate
-# On macOS/Linux:
+# On Mac/Linux:
 source venv/bin/activate
 
-# Install dependencies
+# Install required packages
 pip install -r requirements.txt
 ```
 
 #### Option 2: Manual Download
-1. Download the project as a ZIP file
-2. Extract to your desired location
-3. Open terminal/command prompt in the extracted folder
-4. Run the following commands:
+1. Download the project as a ZIP file from GitHub
+2. Unzip it to any folder you want
+3. Open Command Prompt (Windows) or Terminal (Mac/Linux)
+4. Navigate to the folder and run:
    ```bash
-   # Create virtual environment
+   # Set up Python environment
    python -m venv venv
    
-   # Activate virtual environment
+   # Turn on the environment
    # On Windows:
    venv\Scripts\activate
-   # On macOS/Linux:
+   # On Mac/Linux:
    source venv/bin/activate
    
-   # Install dependencies
+   # Install required packages
    pip install -r requirements.txt
    ```
 
-### Running the Tool
+### How to Run the Tool
 
 ```bash
-# Make sure virtual environment is activated
+# Make sure your environment is turned on (you'll see "venv" in your command line)
 python image_scraper.py
 ```
 
-## 📋 Features
+## 📋 What This Tool Does
 
-- ✅ **Universal URL Support**: Works with any website - not limited to specific sites
-- ✅ **Interactive Authentication**: Prompts user if URLs are password-protected and collects credentials
-- ✅ **HTTP Basic Authentication**: Supports password-protected websites with username/password
-- ✅ **Parallel Processing**: Uses 10 workers for faster screenshot capture
-- ✅ **Organized Output**: Creates a `Tests` folder with subfolders for each page
-- ✅ Scrapes image URLs from:
-  - `<picture>` tags (including `<source>` and nested `<img>` tags)
-  - Elements with class `tile-swatches`
-  - Elements with class `nosto-container`
-  - Handles `srcset` attributes with multiple image URLs
-- ✅ **HTTPS-only filtering**: Automatically filters out non-HTTPS URLs
-- ✅ **Amplience detection**: Fails images containing 'amplience' in URL
-- ✅ **Screenshots for Failed Cases Only**: Saves time and storage
-- ✅ Generates **separate Pass and Fail Excel reports** for each page URL with:
-  - Page URL
-  - Image URLs
-  - Screenshot thumbnails (200x200px) for failed cases
-  - Failure reasons (for failed scenarios)
-- ✅ **Smart validation**: Detects error messages like "No results for url found" and "Bad Request"
-- ✅ **Automatic cleanup**: Deletes screenshots folder after saving to Excel
-- ✅ Handles errors gracefully with comprehensive logging
-- ✅ Follows Python best practices and security guidelines
+- ✅ **Works with any website** - Test images from any site you want
+- ✅ **Asks for password if needed** - If your site needs login, the tool will ask you
+- ✅ **Fast processing** - Checks 10 images at the same time to save time
+- ✅ **Organized results** - Creates a `Tests` folder with all your results neatly organized
+- ✅ **Finds images from**:
+  - Picture tags on web pages
+  - Product swatches
+  - Recommendation sections
+  - All types of image sources
+- ✅ **Only secure images** - Skips non-HTTPS images automatically
+- ✅ **Detects Amplience images** - Flags images from Amplience as failed
+- ✅ **Screenshots only for failures** - Saves space by only capturing failed images
+- ✅ **Creates Excel reports** with:
+  - Which page was tested
+  - All image links
+  - Screenshots of failed images
+  - Why each image failed
+- ✅ **Smart error detection** - Finds broken links and error messages
+- ✅ **Cleans up automatically** - Removes temporary files when done
+- ✅ **Easy to understand logs** - Shows you what's happening step by step
 
 ## 📖 How to Use This Tool
 
