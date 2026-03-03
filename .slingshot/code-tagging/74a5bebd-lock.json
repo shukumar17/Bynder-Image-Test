@@ -1,0 +1,305 @@
+{
+  "chrome-extension\\manifest.json": {
+    "filename": "manifest.json",
+    "path": "chrome-extension\\manifest.json",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "951717": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772463465,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "df5755ad",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": false
+      },
+      "b6e7d9": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772464145,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {},
+        "hash": "77f17884",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": false
+      },
+      "25eb43": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772464187,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "8b54f410",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": false
+      },
+      "bdb003": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772465144,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {},
+        "hash": "1f5ff78d",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": false
+      },
+      "9e3bd3": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772520364,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {},
+        "hash": "40e6088d",
+        "messageId": "1f0347c8-0f63-4096-bdf5-639853a82f0d",
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "84ab5d": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772520743,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "chat",
+        "type": "insertCode",
+        "extraContext": {},
+        "hash": "fff19c10",
+        "messageId": "system_55509580-16cc-11f1-823e-af0623582ed7",
+        "codeBlockId": "system_55509580-16cc-11f1-823e-af0623582ed7-Codeblock-3",
+        "isActive": true
+      },
+      "17eb81": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772520767,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "chat",
+        "type": "insertCode",
+        "extraContext": {},
+        "hash": "a73fa21d",
+        "messageId": "system_55509580-16cc-11f1-823e-af0623582ed7",
+        "codeBlockId": "system_55509580-16cc-11f1-823e-af0623582ed7-Codeblock-2",
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "9e3bd3",
+        "hash": "47009686",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "9e3bd3",
+        "hash": "6a65f34c",
+        "encoded": "%22manifest_version%22:%203,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "9e3bd3",
+        "hash": "9717e4ce",
+        "encoded": "%22name%22:%20%22Universal%20Image%20Scraper%22,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "9e3bd3",
+        "hash": "ddba278c",
+        "encoded": "%22version%22:%20%222.0.0%22,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "9e3bd3",
+        "hash": "225af1e5",
+        "encoded": "%22description%22:%20%22Extract%20and%20validate%20images%20from%20any%20web%20page%20with%20optional%20authentication%20support%22,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "9e3bd3",
+        "hash": "fefaa4fb",
+        "encoded": "%22permissions%22:%20%5B",
+        "prevChunkIds": [
+          "bdb003"
+        ]
+      },
+      "9": {
+        "chunkId": "9e3bd3",
+        "hash": "1f9530f0",
+        "encoded": "%22activeTab%22,",
+        "prevChunkIds": [
+          "bdb003"
+        ]
+      },
+      "10": {
+        "chunkId": "9e3bd3",
+        "hash": "87e60330",
+        "encoded": "%22tabs%22,",
+        "prevChunkIds": [
+          "bdb003"
+        ]
+      },
+      "12": {
+        "chunkId": "9e3bd3",
+        "hash": "e171518d",
+        "encoded": "%22storage%22,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "9e3bd3",
+        "hash": "b9addbf1",
+        "encoded": "%22notifications%22",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "9e3bd3",
+        "hash": "fd9719e2",
+        "encoded": "%5D,",
+        "prevChunkIds": [
+          "bdb003"
+        ]
+      },
+      "15": {
+        "chunkId": "9e3bd3",
+        "hash": "ff720380",
+        "encoded": "%22host_permissions%22:%20%5B",
+        "prevChunkIds": [
+          "25eb43"
+        ]
+      },
+      "16": {
+        "chunkId": "9e3bd3",
+        "hash": "1a1819e0",
+        "encoded": "%22%3Call_urls%3E%22",
+        "prevChunkIds": [
+          "25eb43"
+        ]
+      },
+      "17": {
+        "chunkId": "9e3bd3",
+        "hash": "d58c6b13",
+        "encoded": "%5D,",
+        "prevChunkIds": [
+          "25eb43"
+        ]
+      },
+      "18": {
+        "chunkId": "9e3bd3",
+        "hash": "a00841b2",
+        "encoded": "%22background%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "9e3bd3",
+        "hash": "1f1e5de0",
+        "encoded": "%22service_worker%22:%20%22background.js%22",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "9e3bd3",
+        "hash": "7ce81970",
+        "encoded": "%7D,",
+        "prevChunkIds": [
+          "bdb003"
+        ]
+      },
+      "21": {
+        "chunkId": "9e3bd3",
+        "hash": "1d0dc2a9",
+        "encoded": "%22action%22:%20%7B",
+        "prevChunkIds": [
+          "25eb43"
+        ]
+      },
+      "22": {
+        "chunkId": "9e3bd3",
+        "hash": "3ffb1225",
+        "encoded": "%22default_popup%22:%20%22popup.html%22",
+        "prevChunkIds": [
+          "25eb43"
+        ]
+      },
+      "23": {
+        "chunkId": "17eb81",
+        "hash": "74c10309",
+        "encoded": "cd%20backend",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "17eb81",
+        "hash": "d69189b3",
+        "encoded": "pip%20install%20-r%20requirements_backend.txt",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "17eb81",
+        "hash": "44259ad7",
+        "encoded": "python%20backend_api.py",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "84ab5d",
+        "hash": "86c0625a",
+        "encoded": "#%20Should%20return:%20%7B%22status%22:%20%22healthy%22,%20%22service%22:%20%22Image%20Scraper%20API%22%7D",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "9e3bd3",
+        "hash": "316ac4c0",
+        "encoded": "%22content_security_policy%22:%20%7B",
+        "prevChunkIds": [
+          "25eb43"
+        ]
+      },
+      "28": {
+        "chunkId": "9e3bd3",
+        "hash": "2ed2a42a",
+        "encoded": "%22extension_pages%22:%20%22script-src%20'self';%20object-src%20'self'%22",
+        "prevChunkIds": [
+          "25eb43"
+        ]
+      },
+      "29": {
+        "chunkId": "9e3bd3",
+        "hash": "7721e417",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "25eb43"
+        ]
+      },
+      "30": {
+        "chunkId": "9e3bd3",
+        "hash": "cfdac52c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,339 @@
+{
+  ".gitignore": {
+    "filename": ".gitignore",
+    "path": ".gitignore",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "98b0fd": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772451200,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "819ee3dd",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "98b0fd",
+        "hash": "b251bcd9",
+        "encoded": "#%20Python",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "98b0fd",
+        "hash": "7cbb2b27",
+        "encoded": "__pycache__/",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "98b0fd",
+        "hash": "9493a419",
+        "encoded": "*.py%5Bcod%5D",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "98b0fd",
+        "hash": "8f080315",
+        "encoded": "*$py.class",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "98b0fd",
+        "hash": "f95fcc70",
+        "encoded": "*.so",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "98b0fd",
+        "hash": "22fc3194",
+        "encoded": ".Python",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "98b0fd",
+        "hash": "01536118",
+        "encoded": "build/",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "98b0fd",
+        "hash": "0a216ae8",
+        "encoded": "develop-eggs/",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "98b0fd",
+        "hash": "2c58a2b9",
+        "encoded": "dist/",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "98b0fd",
+        "hash": "8473ffce",
+        "encoded": "downloads/",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "98b0fd",
+        "hash": "4d51f5ef",
+        "encoded": "eggs/",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "98b0fd",
+        "hash": "495ad6ec",
+        "encoded": ".eggs/",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "98b0fd",
+        "hash": "83ca3340",
+        "encoded": "lib/",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "98b0fd",
+        "hash": "3c04f890",
+        "encoded": "lib64/",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "98b0fd",
+        "hash": "f388a84a",
+        "encoded": "parts/",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "98b0fd",
+        "hash": "e874d555",
+        "encoded": "sdist/",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "98b0fd",
+        "hash": "c446e63e",
+        "encoded": "var/",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "98b0fd",
+        "hash": "15ddfd00",
+        "encoded": "wheels/",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "98b0fd",
+        "hash": "8f7fa81b",
+        "encoded": "pip-wheel-metadata/",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "98b0fd",
+        "hash": "ab46e52f",
+        "encoded": "share/python-wheels/",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "98b0fd",
+        "hash": "e41fe0ef",
+        "encoded": "*.egg-info/",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "98b0fd",
+        "hash": "7bd9e4ce",
+        "encoded": ".installed.cfg",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "98b0fd",
+        "hash": "c46101b8",
+        "encoded": "*.egg",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "98b0fd",
+        "hash": "f8359336",
+        "encoded": "PIPFILE.lock",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "98b0fd",
+        "hash": "24ca6349",
+        "encoded": "#%20Virtual%20Environment",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "98b0fd",
+        "hash": "a17f63f6",
+        "encoded": "venv/",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "98b0fd",
+        "hash": "05d2f502",
+        "encoded": "env/",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "98b0fd",
+        "hash": "9316acdc",
+        "encoded": "ENV/",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "98b0fd",
+        "hash": "57b13448",
+        "encoded": "env.bak/",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "98b0fd",
+        "hash": "581fe176",
+        "encoded": "venv.bak/",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "98b0fd",
+        "hash": "fa8078c8",
+        "encoded": "#%20IDE",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "98b0fd",
+        "hash": "7e61b670",
+        "encoded": ".vscode/",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "98b0fd",
+        "hash": "c342f8b4",
+        "encoded": ".idea/",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "98b0fd",
+        "hash": "b3b5aca9",
+        "encoded": "*.swp",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "98b0fd",
+        "hash": "81c96be3",
+        "encoded": "*.swo",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "98b0fd",
+        "hash": "6bf678e1",
+        "encoded": "*~",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "98b0fd",
+        "hash": "b93b873a",
+        "encoded": ".DS_Store",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "98b0fd",
+        "hash": "10788b7b",
+        "encoded": "#%20Project%20specific",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "98b0fd",
+        "hash": "eae5b128",
+        "encoded": "screenshots/",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "98b0fd",
+        "hash": "d0d18a95",
+        "encoded": "*.xlsx",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "98b0fd",
+        "hash": "826a179b",
+        "encoded": "*.xls",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "98b0fd",
+        "hash": "be9eec12",
+        "encoded": "#%20Logs",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "98b0fd",
+        "hash": "d3b060a5",
+        "encoded": "*.log",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "98b0fd",
+        "hash": "428f9182",
+        "encoded": "#%20Environment%20variables",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "98b0fd",
+        "hash": "c43241b3",
+        "encoded": ".env",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "98b0fd",
+        "hash": "9b6ceb59",
+        "encoded": ".env.local",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "98b0fd",
+        "hash": "4c6a8a93",
+        "encoded": "#%20Selenium",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "98b0fd",
+        "hash": "ecdd2a89",
+        "encoded": "selenium-debug.log",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "98b0fd",
+        "hash": "c15a77f3",
+        "encoded": "geckodriver.log",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "98b0fd",
+        "hash": "b3c13eed",
+        "encoded": "#%20Temporary%20files",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "98b0fd",
+        "hash": "9c5e9236",
+        "encoded": "*.tmp",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "98b0fd",
+        "hash": "6e192575",
+        "encoded": "*.temp",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

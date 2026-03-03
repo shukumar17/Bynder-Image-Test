@@ -1,0 +1,1243 @@
+{
+  "backend\\README.md": {
+    "filename": "README.md",
+    "path": "backend\\README.md",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "31a78f": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772463707,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "4a58be09",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "6152c9": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772523086,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {},
+        "hash": "f2f7f775",
+        "messageId": "1f0347c8-0f63-4096-bdf5-639853a82f0d",
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "3e59d0": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772523086,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {},
+        "hash": "f881d168",
+        "messageId": "1f0347c8-0f63-4096-bdf5-639853a82f0d",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "3e59d0",
+        "hash": "682b1836",
+        "encoded": "#%20Image%20Scraper%20Backend%20API",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "2": {
+        "chunkId": "3e59d0",
+        "hash": "5ac33061",
+        "encoded": "##%20Overview",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "3": {
+        "chunkId": "3e59d0",
+        "hash": "0219a39c",
+        "encoded": "FastAPI%20backend%20service%20for%20the%20Image%20Scraper%20application.%20This%20service%20processes%20image%20scraping%20requests%20and%20returns%20Excel%20reports.",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "3e59d0",
+        "hash": "0f5c74a2",
+        "encoded": "##%20Features",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "6": {
+        "chunkId": "3e59d0",
+        "hash": "f1a86d33",
+        "encoded": "-%20**RESTful%20API**:%20FastAPI-based%20REST%20API",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "7": {
+        "chunkId": "3e59d0",
+        "hash": "d8caf8e4",
+        "encoded": "-%20**CORS%20Enabled**:%20Allows%20cross-origin%20requests",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "3e59d0",
+        "hash": "7cefb686",
+        "encoded": "-%20**Image%20Scraping**:%20Scrapes%20images%20from%20web%20pages%20using%20Selenium",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "9": {
+        "chunkId": "3e59d0",
+        "hash": "73209f68",
+        "encoded": "-%20**Excel%20Generation**:%20Creates%20Pass%20and%20Fail%20Excel%20reports",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "10": {
+        "chunkId": "3e59d0",
+        "hash": "bc03b412",
+        "encoded": "-%20**ZIP%20Archive**:%20Packages%20both%20Excel%20files%20into%20a%20ZIP",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "11": {
+        "chunkId": "3e59d0",
+        "hash": "a28cdfce",
+        "encoded": "-%20**Base64%20Encoding**:%20Returns%20files%20as%20base64%20for%20easy%20download",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "13": {
+        "chunkId": "31a78f",
+        "hash": "168a7285",
+        "encoded": "##%20Installation",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "15": {
+        "chunkId": "31a78f",
+        "hash": "d1a14df0",
+        "encoded": "###%201.%20Install%20Dependencies",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "16": {
+        "chunkId": "31a78f",
+        "hash": "582a4326",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "17": {
+        "chunkId": "31a78f",
+        "hash": "0b0885b4",
+        "encoded": "pip%20install%20-r%20requirements_backend.txt",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "18": {
+        "chunkId": "31a78f",
+        "hash": "0380e888",
+        "encoded": "%60%60%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "20": {
+        "chunkId": "31a78f",
+        "hash": "cc8e3610",
+        "encoded": "###%202.%20Configure%20Authentication",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "21": {
+        "chunkId": "31a78f",
+        "hash": "74669b57",
+        "encoded": "Edit%20the%20%60config.py%60%20file%20in%20the%20parent%20directory%20to%20set%20authentication%20credentials:",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "22": {
+        "chunkId": "31a78f",
+        "hash": "918163ed",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "23": {
+        "chunkId": "31a78f",
+        "hash": "86f01a7d",
+        "encoded": "AUTH_CONFIG%20=%20%7B",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "24": {
+        "chunkId": "31a78f",
+        "hash": "1d86d79a",
+        "encoded": "'username':%20'your_username',",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "25": {
+        "chunkId": "31a78f",
+        "hash": "24a6a279",
+        "encoded": "'password':%20'your_password'",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "26": {
+        "chunkId": "31a78f",
+        "hash": "e256b81a",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "27": {
+        "chunkId": "31a78f",
+        "hash": "ebfd5a89",
+        "encoded": "%60%60%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "29": {
+        "chunkId": "31a78f",
+        "hash": "f5c713c2",
+        "encoded": "##%20Running%20the%20Server",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "31": {
+        "chunkId": "31a78f",
+        "hash": "fd61c22e",
+        "encoded": "###%20Development%20Mode",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "32": {
+        "chunkId": "31a78f",
+        "hash": "992a1d5e",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "33": {
+        "chunkId": "31a78f",
+        "hash": "0030e10f",
+        "encoded": "python%20backend_api.py",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "34": {
+        "chunkId": "31a78f",
+        "hash": "1345d99c",
+        "encoded": "%60%60%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "36": {
+        "chunkId": "31a78f",
+        "hash": "ea488322",
+        "encoded": "The%20server%20will%20start%20on%20%60http://localhost:8000%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "38": {
+        "chunkId": "31a78f",
+        "hash": "e470dd1b",
+        "encoded": "###%20Production%20Mode%20with%20Uvicorn",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "39": {
+        "chunkId": "31a78f",
+        "hash": "41544711",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "40": {
+        "chunkId": "31a78f",
+        "hash": "2b538909",
+        "encoded": "uvicorn%20backend_api:app%20--host%200.0.0.0%20--port%208000%20--workers%204",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "41": {
+        "chunkId": "31a78f",
+        "hash": "8c4e1488",
+        "encoded": "%60%60%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "43": {
+        "chunkId": "31a78f",
+        "hash": "3a77b562",
+        "encoded": "##%20API%20Endpoints",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "45": {
+        "chunkId": "31a78f",
+        "hash": "5ff27433",
+        "encoded": "###%201.%20Health%20Check",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "46": {
+        "chunkId": "31a78f",
+        "hash": "538e4928",
+        "encoded": "**GET**%20%60/%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "48": {
+        "chunkId": "31a78f",
+        "hash": "abb82535",
+        "encoded": "Returns%20server%20status%20and%20version%20information.",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "50": {
+        "chunkId": "31a78f",
+        "hash": "c3748b01",
+        "encoded": "**Response:**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "51": {
+        "chunkId": "31a78f",
+        "hash": "419b2a37",
+        "encoded": "%60%60%60json",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "52": {
+        "chunkId": "31a78f",
+        "hash": "f73b2881",
+        "encoded": "%7B",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "53": {
+        "chunkId": "31a78f",
+        "hash": "9298cf05",
+        "encoded": "%22status%22:%20%22running%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "54": {
+        "chunkId": "31a78f",
+        "hash": "b1f43825",
+        "encoded": "%22service%22:%20%22Image%20Scraper%20API%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "55": {
+        "chunkId": "31a78f",
+        "hash": "6f5ad482",
+        "encoded": "%22version%22:%20%221.0.0%22",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "56": {
+        "chunkId": "31a78f",
+        "hash": "cdb7b2a0",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "57": {
+        "chunkId": "31a78f",
+        "hash": "6006e83e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "59": {
+        "chunkId": "31a78f",
+        "hash": "93bf944f",
+        "encoded": "###%202.%20Scrape%20Images",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "60": {
+        "chunkId": "31a78f",
+        "hash": "d2638ed6",
+        "encoded": "**POST**%20%60/api/scrape%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "62": {
+        "chunkId": "31a78f",
+        "hash": "5b313efa",
+        "encoded": "Scrapes%20images%20from%20a%20page%20URL%20and%20returns%20Excel%20reports.",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "64": {
+        "chunkId": "31a78f",
+        "hash": "eb89cd0d",
+        "encoded": "**Request%20Body:**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "65": {
+        "chunkId": "31a78f",
+        "hash": "08845c14",
+        "encoded": "%60%60%60json",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "66": {
+        "chunkId": "31a78f",
+        "hash": "9a197c72",
+        "encoded": "%7B",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "67": {
+        "chunkId": "31a78f",
+        "hash": "44f83fa3",
+        "encoded": "%22page_url%22:%20%22https://example.com/page%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "68": {
+        "chunkId": "31a78f",
+        "hash": "36a3ff0e",
+        "encoded": "%22base_filename%22:%20%22MyReport%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "69": {
+        "chunkId": "31a78f",
+        "hash": "73273f85",
+        "encoded": "%22username%22:%20%22optional_username%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "70": {
+        "chunkId": "31a78f",
+        "hash": "20392a3b",
+        "encoded": "%22password%22:%20%22optional_password%22",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "71": {
+        "chunkId": "31a78f",
+        "hash": "f064f9d6",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "72": {
+        "chunkId": "31a78f",
+        "hash": "d2d592b3",
+        "encoded": "%60%60%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "74": {
+        "chunkId": "31a78f",
+        "hash": "9e0011d3",
+        "encoded": "**Response:**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "75": {
+        "chunkId": "31a78f",
+        "hash": "10693e9c",
+        "encoded": "%60%60%60json",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "76": {
+        "chunkId": "31a78f",
+        "hash": "836ab946",
+        "encoded": "%7B",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "77": {
+        "chunkId": "31a78f",
+        "hash": "0a93b773",
+        "encoded": "%22pass_file%22:%20%22base64_encoded_excel_data%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "78": {
+        "chunkId": "31a78f",
+        "hash": "60ee6127",
+        "encoded": "%22fail_file%22:%20%22base64_encoded_excel_data%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "79": {
+        "chunkId": "31a78f",
+        "hash": "82236042",
+        "encoded": "%22zip_file%22:%20%22base64_encoded_zip_data%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "80": {
+        "chunkId": "31a78f",
+        "hash": "83f6f0fe",
+        "encoded": "%22pass_filename%22:%20%22MyReport_Pass.xlsx%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "81": {
+        "chunkId": "31a78f",
+        "hash": "918b81ca",
+        "encoded": "%22fail_filename%22:%20%22MyReport_Fail.xlsx%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "82": {
+        "chunkId": "31a78f",
+        "hash": "2f8fb7c9",
+        "encoded": "%22zip_filename%22:%20%22MyReport_Results.zip%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "83": {
+        "chunkId": "31a78f",
+        "hash": "6db3d227",
+        "encoded": "%22message%22:%20%22Scraping%20completed%20successfully%22",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "84": {
+        "chunkId": "31a78f",
+        "hash": "d7cd7257",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "85": {
+        "chunkId": "31a78f",
+        "hash": "2e72b4ad",
+        "encoded": "%60%60%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "87": {
+        "chunkId": "31a78f",
+        "hash": "3a497a2e",
+        "encoded": "###%203.%20Health%20Check",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "88": {
+        "chunkId": "31a78f",
+        "hash": "4f61a927",
+        "encoded": "**GET**%20%60/health%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "90": {
+        "chunkId": "31a78f",
+        "hash": "0d511731",
+        "encoded": "Monitoring%20endpoint%20for%20health%20checks.",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "92": {
+        "chunkId": "31a78f",
+        "hash": "5843386c",
+        "encoded": "**Response:**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "93": {
+        "chunkId": "31a78f",
+        "hash": "679a2c67",
+        "encoded": "%60%60%60json",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "94": {
+        "chunkId": "31a78f",
+        "hash": "251d6107",
+        "encoded": "%7B",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "95": {
+        "chunkId": "31a78f",
+        "hash": "16fb4893",
+        "encoded": "%22status%22:%20%22healthy%22,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "96": {
+        "chunkId": "31a78f",
+        "hash": "410ea059",
+        "encoded": "%22service%22:%20%22Image%20Scraper%20API%22",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "97": {
+        "chunkId": "31a78f",
+        "hash": "21cc0f70",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "98": {
+        "chunkId": "31a78f",
+        "hash": "0b932502",
+        "encoded": "%60%60%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "100": {
+        "chunkId": "31a78f",
+        "hash": "ebe2266f",
+        "encoded": "##%20Deployment",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "102": {
+        "chunkId": "31a78f",
+        "hash": "2045f163",
+        "encoded": "###%20Deploy%20to%20GitHub%20(with%20GitHub%20Actions)",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "104": {
+        "chunkId": "31a78f",
+        "hash": "ef68f39f",
+        "encoded": "1.%20**Create%20GitHub%20Repository**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "105": {
+        "chunkId": "31a78f",
+        "hash": "787e5660",
+        "encoded": "2.%20**Push%20Code%20to%20Repository**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "106": {
+        "chunkId": "31a78f",
+        "hash": "e6523093",
+        "encoded": "3.%20**Set%20Up%20GitHub%20Actions**%20(create%20%60.github/workflows/deploy.yml%60)",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "107": {
+        "chunkId": "31a78f",
+        "hash": "8c690f37",
+        "encoded": "4.%20**Configure%20Secrets**%20in%20GitHub%20repository%20settings",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "109": {
+        "chunkId": "31a78f",
+        "hash": "08a6b0de",
+        "encoded": "###%20Deploy%20to%20Heroku",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "111": {
+        "chunkId": "31a78f",
+        "hash": "8554ebce",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "112": {
+        "chunkId": "31a78f",
+        "hash": "30356f89",
+        "encoded": "#%20Install%20Heroku%20CLI",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "113": {
+        "chunkId": "31a78f",
+        "hash": "56314569",
+        "encoded": "#%20Login%20to%20Heroku",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "114": {
+        "chunkId": "31a78f",
+        "hash": "23b6a81c",
+        "encoded": "heroku%20login",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "116": {
+        "chunkId": "31a78f",
+        "hash": "b335e975",
+        "encoded": "#%20Create%20Heroku%20app",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "117": {
+        "chunkId": "31a78f",
+        "hash": "a23d1b7f",
+        "encoded": "heroku%20create%20your-app-name",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "119": {
+        "chunkId": "31a78f",
+        "hash": "eb0d35ce",
+        "encoded": "#%20Add%20Procfile",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "120": {
+        "chunkId": "31a78f",
+        "hash": "9097282c",
+        "encoded": "echo%20%22web:%20uvicorn%20backend_api:app%20--host%200.0.0.0%20--port%20%5C$PORT%22%20%3E%20Procfile",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "122": {
+        "chunkId": "31a78f",
+        "hash": "3eb11127",
+        "encoded": "#%20Deploy",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "123": {
+        "chunkId": "31a78f",
+        "hash": "c1920bbb",
+        "encoded": "git%20push%20heroku%20main",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "124": {
+        "chunkId": "31a78f",
+        "hash": "3b55dd73",
+        "encoded": "%60%60%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "126": {
+        "chunkId": "31a78f",
+        "hash": "8e6cf669",
+        "encoded": "###%20Deploy%20to%20AWS%20EC2",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "128": {
+        "chunkId": "31a78f",
+        "hash": "385620f9",
+        "encoded": "1.%20**Launch%20EC2%20Instance**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "129": {
+        "chunkId": "31a78f",
+        "hash": "00a2f5fc",
+        "encoded": "2.%20**Install%20Python%20and%20Dependencies**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "130": {
+        "chunkId": "31a78f",
+        "hash": "3fa5d5d7",
+        "encoded": "3.%20**Clone%20Repository**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "131": {
+        "chunkId": "31a78f",
+        "hash": "95d785eb",
+        "encoded": "4.%20**Install%20Requirements**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "132": {
+        "chunkId": "31a78f",
+        "hash": "1bf583f4",
+        "encoded": "5.%20**Run%20with%20Systemd%20Service**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "134": {
+        "chunkId": "31a78f",
+        "hash": "07bb287f",
+        "encoded": "###%20Deploy%20to%20Railway",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "136": {
+        "chunkId": "31a78f",
+        "hash": "20c7f0e0",
+        "encoded": "1.%20**Connect%20GitHub%20Repository%20to%20Railway**",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "139": {
+        "chunkId": "6152c9",
+        "hash": "b67b358e",
+        "encoded": "For%20production,%20update%20CORS%20settings%20in%20%60backend_api.py%60:",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "141": {
+        "chunkId": "6152c9",
+        "hash": "0ca6bc6a",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "142": {
+        "chunkId": "6152c9",
+        "hash": "307318b1",
+        "encoded": "app.add_middleware(",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "143": {
+        "chunkId": "6152c9",
+        "hash": "33c513d1",
+        "encoded": "CORSMiddleware,",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "144": {
+        "chunkId": "6152c9",
+        "hash": "d79d0d43",
+        "encoded": "allow_origins=%5B",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "145": {
+        "chunkId": "6152c9",
+        "hash": "a8e5f0d0",
+        "encoded": "%22http://localhost:3000%22,%20%20#%20Add%20your%20frontend%20URLs",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "146": {
+        "chunkId": "6152c9",
+        "hash": "04fef131",
+        "encoded": "%22https://yourdomain.com%22",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "147": {
+        "chunkId": "6152c9",
+        "hash": "cf7a0960",
+        "encoded": "%5D,",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "148": {
+        "chunkId": "6152c9",
+        "hash": "1551fa14",
+        "encoded": "allow_credentials=True,",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "149": {
+        "chunkId": "6152c9",
+        "hash": "5b9933c6",
+        "encoded": "allow_methods=%5B%22POST%22,%20%22GET%22%5D,",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "150": {
+        "chunkId": "6152c9",
+        "hash": "acaf32b8",
+        "encoded": "allow_headers=%5B%22*%22%5D,",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "151": {
+        "chunkId": "6152c9",
+        "hash": "526cbff6",
+        "encoded": ")",
+        "prevChunkIds": [
+          "6152c9"
+        ]
+      },
+      "153": {
+        "chunkId": "31a78f",
+        "hash": "6ac9eec8",
+        "encoded": "CORSMiddleware,",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "31a78f",
+        "hash": "5ada2ec5",
+        "encoded": "allow_origins=%5B",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "155": {
+        "chunkId": "31a78f",
+        "hash": "57e8a715",
+        "encoded": "%22chrome-extension://YOUR_EXTENSION_ID%22",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "31a78f",
+        "hash": "09b6cca9",
+        "encoded": "%5D,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "157": {
+        "chunkId": "31a78f",
+        "hash": "217034cb",
+        "encoded": "allow_credentials=True,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "158": {
+        "chunkId": "31a78f",
+        "hash": "19fe8abc",
+        "encoded": "allow_methods=%5B%22POST%22,%20%22GET%22%5D,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "159": {
+        "chunkId": "31a78f",
+        "hash": "50a695f2",
+        "encoded": "allow_headers=%5B%22*%22%5D,",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "160": {
+        "chunkId": "31a78f",
+        "hash": "08516221",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "6152c9",
+        "hash": "47eaf8a8",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "31a78f",
+        "hash": "c39d4ee8",
+        "encoded": "##%20Security%20Considerations",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "165": {
+        "chunkId": "31a78f",
+        "hash": "534557f7",
+        "encoded": "1.%20**Authentication**:%20Implement%20API%20key%20authentication",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "166": {
+        "chunkId": "31a78f",
+        "hash": "b0d95b24",
+        "encoded": "2.%20**Rate%20Limiting**:%20Add%20rate%20limiting%20to%20prevent%20abuse",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "167": {
+        "chunkId": "31a78f",
+        "hash": "96645914",
+        "encoded": "3.%20**HTTPS**:%20Always%20use%20HTTPS%20in%20production",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "31a78f",
+        "hash": "acc1e451",
+        "encoded": "4.%20**CORS**:%20Restrict%20CORS%20to%20your%20extension%20ID%20only",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "31a78f",
+        "hash": "f0fc1142",
+        "encoded": "5.%20**Input%20Validation**:%20Validate%20all%20input%20parameters",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "31a78f",
+        "hash": "a9965cbc",
+        "encoded": "##%20Troubleshooting",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "31a78f",
+        "hash": "f6a9bd4b",
+        "encoded": "###%20ChromeDriver%20Issues",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "31a78f",
+        "hash": "6680d1dc",
+        "encoded": "If%20you%20encounter%20ChromeDriver%20errors,%20ensure:",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "31a78f",
+        "hash": "67018218",
+        "encoded": "-%20Chrome%20browser%20is%20installed%20on%20the%20server",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "31a78f",
+        "hash": "ac3ece7f",
+        "encoded": "-%20ChromeDriver%20version%20matches%20Chrome%20version",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "177": {
+        "chunkId": "31a78f",
+        "hash": "1cd3e115",
+        "encoded": "-%20Proper%20permissions%20for%20ChromeDriver%20execution",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "31a78f",
+        "hash": "37b2e3e2",
+        "encoded": "###%20Memory%20Issues",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "31a78f",
+        "hash": "54fd625a",
+        "encoded": "For%20large%20scraping%20tasks:",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "181": {
+        "chunkId": "31a78f",
+        "hash": "d3f55be1",
+        "encoded": "-%20Increase%20server%20memory",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "182": {
+        "chunkId": "31a78f",
+        "hash": "8ddb0eed",
+        "encoded": "-%20Use%20worker%20processes",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "183": {
+        "chunkId": "31a78f",
+        "hash": "f50d41c0",
+        "encoded": "-%20Implement%20task%20queue%20(Celery)",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "185": {
+        "chunkId": "31a78f",
+        "hash": "a70b75d7",
+        "encoded": "###%20CORS%20Errors",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "31a78f",
+        "hash": "36ceae1d",
+        "encoded": "-%20Check%20CORS%20configuration",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "31a78f",
+        "hash": "a1d3582a",
+        "encoded": "-%20Check%20browser%20console%20for%20errors",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "191": {
+        "chunkId": "31a78f",
+        "hash": "f71fe1c4",
+        "encoded": "##%20Monitoring",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "193": {
+        "chunkId": "31a78f",
+        "hash": "0c2f398b",
+        "encoded": "Use%20the%20%60/health%60%20endpoint%20for%20monitoring:",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "31a78f",
+        "hash": "9cd28f11",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "196": {
+        "chunkId": "31a78f",
+        "hash": "536b1a38",
+        "encoded": "curl%20http://localhost:8000/health",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "197": {
+        "chunkId": "31a78f",
+        "hash": "77444ad1",
+        "encoded": "%60%60%60",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      },
+      "199": {
+        "chunkId": "31a78f",
+        "hash": "dc942fd8",
+        "encoded": "##%20License",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "31a78f",
+        "hash": "ff7b4580",
+        "encoded": "Private%20use%20only%20for%20your%20team.",
+        "prevChunkIds": [
+          "31a78f"
+        ]
+      }
+    }
+  }
+}

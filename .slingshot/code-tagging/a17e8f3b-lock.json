@@ -1,0 +1,33 @@
+{
+  "backend\\Procfile": {
+    "filename": "Procfile",
+    "path": "backend\\Procfile",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "e3f769": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772463707,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "ea4144c5",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "e3f769",
+        "hash": "8934818a",
+        "encoded": "web:%20uvicorn%20backend_api:app%20--host%200.0.0.0%20--port%20$PORT",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

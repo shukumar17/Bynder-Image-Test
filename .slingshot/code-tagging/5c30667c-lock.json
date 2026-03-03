@@ -1,0 +1,963 @@
+{
+  "fix_webdriver.py": {
+    "filename": "fix_webdriver.py",
+    "path": "fix_webdriver.py",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "b43395": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772452020,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "60e94370",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "b43395",
+        "hash": "daf94ca7",
+        "encoded": "%22%22%22WebDriver%20Troubleshooting%20and%20Fix%20Script",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "b43395",
+        "hash": "b0d9a2aa",
+        "encoded": "This%20script%20helps%20diagnose%20and%20fix%20common%20WebDriver%20issues%20on%20Windows.",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "b43395",
+        "hash": "05a38896",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "b43395",
+        "hash": "79ed4114",
+        "encoded": "import%20os",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "b43395",
+        "hash": "400e3c03",
+        "encoded": "import%20sys",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "b43395",
+        "hash": "ea3b6278",
+        "encoded": "import%20shutil",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "b43395",
+        "hash": "4969c76e",
+        "encoded": "import%20subprocess",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "b43395",
+        "hash": "82042102",
+        "encoded": "from%20pathlib%20import%20Path",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "b43395",
+        "hash": "89777154",
+        "encoded": "def%20print_section(title):",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "b43395",
+        "hash": "7c0ce702",
+        "encoded": "%22%22%22Print%20a%20formatted%20section%20header.%22%22%22",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "b43395",
+        "hash": "f54387e0",
+        "encoded": "print(%22%5Cn%22%20+%20%22=%22*60)",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "b43395",
+        "hash": "887df1bf",
+        "encoded": "print(f%22%20%20%7Btitle%7D%22)",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "b43395",
+        "hash": "aa62c218",
+        "encoded": "print(%22=%22*60%20+%20%22%5Cn%22)",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "b43395",
+        "hash": "0e352426",
+        "encoded": "def%20check_python_architecture():",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "b43395",
+        "hash": "9c0eb015",
+        "encoded": "%22%22%22Check%20if%20Python%20is%2032-bit%20or%2064-bit.%22%22%22",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "b43395",
+        "hash": "9f5cf05e",
+        "encoded": "print_section(%22Python%20Architecture%20Check%22)",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "b43395",
+        "hash": "ed492d94",
+        "encoded": "import%20platform",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "b43395",
+        "hash": "1b676033",
+        "encoded": "arch%20=%20platform.architecture()%5B0%5D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "b43395",
+        "hash": "bdb567be",
+        "encoded": "python_version%20=%20sys.version",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "b43395",
+        "hash": "cb7292b8",
+        "encoded": "print(f%22Python%20Version:%20%7Bpython_version%7D%22)",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "b43395",
+        "hash": "baf2c1be",
+        "encoded": "print(f%22Architecture:%20%7Barch%7D%22)",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "b43395",
+        "hash": "5efaf849",
+        "encoded": "if%20arch%20==%20%2232bit%22:",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "b43395",
+        "hash": "7192ab51",
+        "encoded": "print(%22%5Cn%E2%9A%A0%EF%B8%8F%20%20WARNING:%20You're%20using%2032-bit%20Python!%22)",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "b43395",
+        "hash": "041e8b55",
+        "encoded": "print(%22%20%20%20This%20may%20cause%20compatibility%20issues%20with%20ChromeDriver.%22)",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "b43395",
+        "hash": "1d1fdcf4",
+        "encoded": "print(%22%20%20%20Consider%20installing%2064-bit%20Python%20for%20better%20compatibility.%22)",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "b43395",
+        "hash": "b10fd564",
+        "encoded": "return%20False",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "b43395",
+        "hash": "f24fb52d",
+        "encoded": "else:",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "b43395",
+        "hash": "a1eda5d0",
+        "encoded": "print(%22%5Cn%E2%9C%93%20Using%2064-bit%20Python%20(Recommended)%22)",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "b43395",
+        "hash": "96aca597",
+        "encoded": "return%20True",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "b43395",
+        "hash": "ddffe072",
+        "encoded": "def%20check_chrome_installation():",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "b43395",
+        "hash": "1bde0daf",
+        "encoded": "%22%22%22Check%20if%20Google%20Chrome%20is%20installed.%22%22%22",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "b43395",
+        "hash": "7505ed2d",
+        "encoded": "print_section(%22Google%20Chrome%20Check%22)",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "b43395",
+        "hash": "72e76b04",
+        "encoded": "chrome_paths%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "b43395",
+        "hash": "df081503",
+        "encoded": "r%22C:%5CProgram%20Files%5CGoogle%5CChrome%5CApplication%5Cchrome.exe%22,",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "b43395",
+        "hash": "54061ca2",
+        "encoded": "r%22C:%5CProgram%20Files%20(x86)%5CGoogle%5CChrome%5CApplication%5Cchrome.exe%22,",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "b43395",
+        "hash": "4cd301e8",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "b43395",
+        "hash": "b94856a4",
+        "encoded": "for%20path%20in%20chrome_paths:",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "b43395",
+        "hash": "879f2e6a",
+        "encoded": "if%20os.path.exists(path):",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "b43395",
+        "hash": "b4399f7b",
+        "encoded": "print(f%22%E2%9C%93%20Chrome%20found%20at:%20%7Bpath%7D%22)",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "b43395",
+        "hash": "6c357db7",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "b43395",
+        "hash": "15bf0136",
+        "encoded": "#%20Try%20to%20get%20Chrome%20version",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "b43395",
+        "hash": "9bd5bbee",
+        "encoded": "result%20=%20subprocess.run(",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "b43395",
+        "hash": "be18c0fc",
+        "encoded": "%5Bpath,%20%22--version%22%5D,",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "b43395",
+        "hash": "54eb51fb",
+        "encoded": "capture_output=True,",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "b43395",
+        "hash": "6ed86eed",
+        "encoded": "text=True,",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "b43395",
+        "hash": "33003186",
+        "encoded": "timeout=5",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "b43395",
+        "hash": "86d6f6a3",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "b43395",
+        "hash": "dae534f3",
+        "encoded": "if%20result.stdout:",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "b43395",
+        "hash": "add91203",
+        "encoded": "print(f%22%20%20Version:%20%7Bresult.stdout.strip()%7D%22)",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "b43395",
+        "hash": "cf77116d",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "b43395",
+        "hash": "af89fba0",
+        "encoded": "print(f%22%20%20Could%20not%20determine%20version:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "b43395",
+        "hash": "61257e1b",
+        "encoded": "return%20True",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "b43395",
+        "hash": "769a8f68",
+        "encoded": "print(%22%E2%9C%97%20Google%20Chrome%20not%20found!%22)",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "b43395",
+        "hash": "14ef151c",
+        "encoded": "print(%22%20%20Please%20install%20Google%20Chrome%20from:%20https://www.google.com/chrome/%22)",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "b43395",
+        "hash": "d402e1b8",
+        "encoded": "return%20False",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "b43395",
+        "hash": "9df560d2",
+        "encoded": "def%20clear_webdriver_cache():",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "b43395",
+        "hash": "00884f51",
+        "encoded": "%22%22%22Clear%20the%20webdriver-manager%20cache.%22%22%22",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "b43395",
+        "hash": "ac45934c",
+        "encoded": "print_section(%22Clearing%20WebDriver%20Cache%22)",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "b43395",
+        "hash": "13ada3e3",
+        "encoded": "cache_paths%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "b43395",
+        "hash": "d1c017bd",
+        "encoded": "Path.home()%20/%20%22.wdm%22,",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "b43395",
+        "hash": "441a35dc",
+        "encoded": "Path.home()%20/%20%22.cache%22%20/%20%22selenium%22,",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "b43395",
+        "hash": "f027ef5d",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "b43395",
+        "hash": "decf8a02",
+        "encoded": "for%20cache_path%20in%20cache_paths:",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "b43395",
+        "hash": "bced9911",
+        "encoded": "if%20cache_path.exists():",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "b43395",
+        "hash": "d2b985e3",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "b43395",
+        "hash": "87821f1b",
+        "encoded": "shutil.rmtree(cache_path)",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "b43395",
+        "hash": "a64f62b6",
+        "encoded": "print(f%22%E2%9C%93%20Cleared%20cache:%20%7Bcache_path%7D%22)",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "b43395",
+        "hash": "35961799",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "b43395",
+        "hash": "1b21ca28",
+        "encoded": "print(f%22%E2%9C%97%20Failed%20to%20clear%20%7Bcache_path%7D:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "b43395",
+        "hash": "d2288b2b",
+        "encoded": "else:",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "b43395",
+        "hash": "01c77fa2",
+        "encoded": "print(f%22%20%20Cache%20not%20found:%20%7Bcache_path%7D%22)",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "b43395",
+        "hash": "5578dc01",
+        "encoded": "def%20reinstall_packages():",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "b43395",
+        "hash": "7fdee32d",
+        "encoded": "%22%22%22Reinstall%20selenium%20and%20webdriver-manager.%22%22%22",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "b43395",
+        "hash": "750f5d2f",
+        "encoded": "print_section(%22Reinstalling%20Packages%22)",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "b43395",
+        "hash": "0555e04c",
+        "encoded": "print(%22Uninstalling%20old%20packages...%22)",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "b43395",
+        "hash": "f205eade",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "b43395",
+        "hash": "00f88962",
+        "encoded": "subprocess.run(",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "b43395",
+        "hash": "9e3bb1dd",
+        "encoded": "%5Bsys.executable,%20%22-m%22,%20%22pip%22,%20%22uninstall%22,%20%22-y%22,%20%22selenium%22,%20%22webdriver-manager%22%5D,",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "b43395",
+        "hash": "06af09fd",
+        "encoded": "check=True",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "b43395",
+        "hash": "b2a74a31",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "b43395",
+        "hash": "4dcdf50d",
+        "encoded": "print(%22%E2%9C%93%20Old%20packages%20uninstalled%22)",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "b43395",
+        "hash": "fe501552",
+        "encoded": "except%20subprocess.CalledProcessError%20as%20e:",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "b43395",
+        "hash": "a3ec1cd7",
+        "encoded": "print(f%22%E2%9C%97%20Uninstall%20failed:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "b43395",
+        "hash": "d575f29e",
+        "encoded": "return%20False",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "b43395",
+        "hash": "74ef6daa",
+        "encoded": "print(%22%5CnInstalling%20fresh%20packages...%22)",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "b43395",
+        "hash": "bb1093c7",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "b43395",
+        "hash": "c4ace657",
+        "encoded": "subprocess.run(",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "b43395",
+        "hash": "f283e2f8",
+        "encoded": "%5Bsys.executable,%20%22-m%22,%20%22pip%22,%20%22install%22,%20%22--upgrade%22,%20%22selenium%22,%20%22webdriver-manager%22%5D,",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "b43395",
+        "hash": "f7896e73",
+        "encoded": "check=True",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "b43395",
+        "hash": "f0befa65",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "b43395",
+        "hash": "ce8ca825",
+        "encoded": "print(%22%E2%9C%93%20Packages%20installed%20successfully%22)",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "b43395",
+        "hash": "9ab1b82b",
+        "encoded": "return%20True",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "b43395",
+        "hash": "53b8ccef",
+        "encoded": "except%20subprocess.CalledProcessError%20as%20e:",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "b43395",
+        "hash": "ad540623",
+        "encoded": "print(f%22%E2%9C%97%20Installation%20failed:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "b43395",
+        "hash": "49a63be4",
+        "encoded": "return%20False",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "b43395",
+        "hash": "ba10cd1e",
+        "encoded": "def%20test_webdriver():",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "b43395",
+        "hash": "43e5c8fc",
+        "encoded": "%22%22%22Test%20WebDriver%20initialization.%22%22%22",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "b43395",
+        "hash": "838b0569",
+        "encoded": "print_section(%22Testing%20WebDriver%22)",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "b43395",
+        "hash": "78d227ca",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "b43395",
+        "hash": "88eeae73",
+        "encoded": "from%20selenium%20import%20webdriver",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "b43395",
+        "hash": "e4856159",
+        "encoded": "from%20selenium.webdriver.chrome.service%20import%20Service",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "b43395",
+        "hash": "9f79113e",
+        "encoded": "from%20selenium.webdriver.chrome.options%20import%20Options",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "b43395",
+        "hash": "4b1996bd",
+        "encoded": "from%20webdriver_manager.chrome%20import%20ChromeDriverManager",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "b43395",
+        "hash": "2879b850",
+        "encoded": "print(%22Initializing%20ChromeDriver...%22)",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "b43395",
+        "hash": "c7ce76e2",
+        "encoded": "chrome_options%20=%20Options()",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "b43395",
+        "hash": "648e7b16",
+        "encoded": "chrome_options.add_argument('--headless')",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "b43395",
+        "hash": "b3c806ff",
+        "encoded": "chrome_options.add_argument('--no-sandbox')",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "b43395",
+        "hash": "1c54e656",
+        "encoded": "chrome_options.add_argument('--disable-dev-shm-usage')",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "b43395",
+        "hash": "fa85ee10",
+        "encoded": "driver_path%20=%20ChromeDriverManager().install()",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "b43395",
+        "hash": "15a22853",
+        "encoded": "print(f%22ChromeDriver%20installed%20at:%20%7Bdriver_path%7D%22)",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "b43395",
+        "hash": "c45dc780",
+        "encoded": "service%20=%20Service(driver_path)",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "b43395",
+        "hash": "ce8b2c21",
+        "encoded": "driver%20=%20webdriver.Chrome(service=service,%20options=chrome_options)",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "b43395",
+        "hash": "3b59890e",
+        "encoded": "print(%22%E2%9C%93%20WebDriver%20initialized%20successfully!%22)",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "b43395",
+        "hash": "825edcd3",
+        "encoded": "#%20Test%20navigation",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "b43395",
+        "hash": "b246bafb",
+        "encoded": "driver.get(%22https://www.google.com%22)",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "b43395",
+        "hash": "7b940b83",
+        "encoded": "print(f%22%E2%9C%93%20Successfully%20navigated%20to:%20%7Bdriver.current_url%7D%22)",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "b43395",
+        "hash": "160a1451",
+        "encoded": "driver.quit()",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "b43395",
+        "hash": "09734ed5",
+        "encoded": "print(%22%E2%9C%93%20WebDriver%20test%20completed%20successfully!%22)",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "b43395",
+        "hash": "35e9b87c",
+        "encoded": "return%20True",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "b43395",
+        "hash": "3ef53c9b",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "b43395",
+        "hash": "7106c639",
+        "encoded": "print(f%22%E2%9C%97%20WebDriver%20test%20failed:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "b43395",
+        "hash": "7cc022c9",
+        "encoded": "return%20False",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "b43395",
+        "hash": "814b5a2c",
+        "encoded": "def%20main():",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "b43395",
+        "hash": "f373f257",
+        "encoded": "%22%22%22Main%20execution%20function.%22%22%22",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "b43395",
+        "hash": "02f98abd",
+        "encoded": "print(%22%5Cn%22%20+%20%22#%22*60)",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "b43395",
+        "hash": "49b713d1",
+        "encoded": "print(%22#%20%20WebDriver%20Troubleshooting%20and%20Fix%20Script%22)",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "b43395",
+        "hash": "718f8195",
+        "encoded": "print(%22#%22*60)",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "b43395",
+        "hash": "d739dc61",
+        "encoded": "#%20Run%20diagnostics",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "b43395",
+        "hash": "1b229b33",
+        "encoded": "python_ok%20=%20check_python_architecture()",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "b43395",
+        "hash": "56734249",
+        "encoded": "chrome_ok%20=%20check_chrome_installation()",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "b43395",
+        "hash": "12d72700",
+        "encoded": "if%20not%20chrome_ok:",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "b43395",
+        "hash": "a9014554",
+        "encoded": "print(%22%5Cn%E2%9A%A0%EF%B8%8F%20%20Please%20install%20Google%20Chrome%20before%20proceeding.%22)",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "b43395",
+        "hash": "b7b7189c",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "b43395",
+        "hash": "d177bbeb",
+        "encoded": "#%20Ask%20user%20if%20they%20want%20to%20proceed%20with%20fixes",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "b43395",
+        "hash": "10b4f1a0",
+        "encoded": "print_section(%22Recommended%20Actions%22)",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "b43395",
+        "hash": "f50c8dd9",
+        "encoded": "print(%22This%20script%20will:%22)",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "b43395",
+        "hash": "06a560d5",
+        "encoded": "print(%22%20%201.%20Clear%20WebDriver%20cache%22)",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "b43395",
+        "hash": "abfd9574",
+        "encoded": "print(%22%20%202.%20Reinstall%20selenium%20and%20webdriver-manager%22)",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "b43395",
+        "hash": "569cb7ac",
+        "encoded": "print(%22%20%203.%20Test%20WebDriver%20initialization%22)",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "b43395",
+        "hash": "b39ec5a5",
+        "encoded": "response%20=%20input(%22%5CnProceed%20with%20fixes?%20(yes/no):%20%22).strip().lower()",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "b43395",
+        "hash": "10655edb",
+        "encoded": "if%20response%20not%20in%20%5B'yes',%20'y'%5D:",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "b43395",
+        "hash": "28907cf8",
+        "encoded": "print(%22%5CnExiting%20without%20making%20changes.%22)",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "b43395",
+        "hash": "79f701ff",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "b43395",
+        "hash": "c29d949c",
+        "encoded": "#%20Apply%20fixes",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "b43395",
+        "hash": "5af6903e",
+        "encoded": "clear_webdriver_cache()",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "b43395",
+        "hash": "368446cd",
+        "encoded": "if%20reinstall_packages():",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "b43395",
+        "hash": "43eb43c0",
+        "encoded": "test_webdriver()",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "b43395",
+        "hash": "fc2611d0",
+        "encoded": "print_section(%22Summary%22)",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "b43395",
+        "hash": "41a1a1c1",
+        "encoded": "print(%22If%20the%20test%20was%20successful,%20you%20can%20now%20run%20your%20image_scraper.py%22)",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "b43395",
+        "hash": "43a905b1",
+        "encoded": "print(%22If%20issues%20persist,%20please%20check:%22)",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "b43395",
+        "hash": "3831df5c",
+        "encoded": "print(%22%20%20-%20Windows%20Defender%20or%20antivirus%20blocking%20ChromeDriver%22)",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "b43395",
+        "hash": "306e8e04",
+        "encoded": "print(%22%20%20-%20Firewall%20settings%22)",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "b43395",
+        "hash": "845d82a7",
+        "encoded": "print(%22%20%20-%20User%20permissions%20for%20the%20.wdm%20cache%20directory%22)",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "b43395",
+        "hash": "94d8306a",
+        "encoded": "print(%22%5Cn%22%20+%20%22#%22*60%20+%20%22%5Cn%22)",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "b43395",
+        "hash": "621a08b0",
+        "encoded": "if%20__name__%20==%20%22__main__%22:",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "b43395",
+        "hash": "56a2000b",
+        "encoded": "main()",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

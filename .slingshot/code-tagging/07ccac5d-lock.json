@@ -1,0 +1,945 @@
+{
+  "README_AUTH.md": {
+    "filename": "README_AUTH.md",
+    "path": "README_AUTH.md",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "41b987": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772453641,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "dfd20f05",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "41b987",
+        "hash": "9bb702fc",
+        "encoded": "#%20Authentication%20Configuration%20Guide",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "41b987",
+        "hash": "5ac33061",
+        "encoded": "##%20Overview",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "41b987",
+        "hash": "688f4785",
+        "encoded": "The%20Image%20Scraper%20now%20supports%20HTTP%20Basic%20Authentication%20for%20accessing%20protected%20URLs.%20This%20allows%20you%20to%20scrape%20images%20from%20password-protected%20websites.",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "41b987",
+        "hash": "5f6544ba",
+        "encoded": "##%20Configuration%20Setup",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "41b987",
+        "hash": "e360e421",
+        "encoded": "###%201.%20Using%20config.py%20(Recommended)",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "41b987",
+        "hash": "be77ee24",
+        "encoded": "The%20scraper%20automatically%20loads%20credentials%20from%20%60config.py%60.%20This%20file%20has%20been%20created%20with%20the%20following%20structure:",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "41b987",
+        "hash": "b69c9779",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "41b987",
+        "hash": "4e06c06f",
+        "encoded": "AUTH_CONFIG%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "41b987",
+        "hash": "2281c184",
+        "encoded": "'username':%20'storefront',",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "41b987",
+        "hash": "623826ab",
+        "encoded": "'password':%20'72MarcJacobs'",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "41b987",
+        "hash": "c8f9d1c3",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "41b987",
+        "hash": "f8a5aeec",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "41b987",
+        "hash": "6cfefa33",
+        "encoded": "**To%20update%20credentials:**",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "41b987",
+        "hash": "c6d9cb5c",
+        "encoded": "1.%20Open%20%60config.py%60%20in%20your%20editor",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "41b987",
+        "hash": "d7047169",
+        "encoded": "2.%20Modify%20the%20%60username%60%20and%20%60password%60%20values",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "41b987",
+        "hash": "42c53669",
+        "encoded": "3.%20Save%20the%20file",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "41b987",
+        "hash": "e26d42de",
+        "encoded": "4.%20Run%20the%20scraper%20normally",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "41b987",
+        "hash": "0b01d137",
+        "encoded": "###%202.%20Using%20Command-Line%20Arguments%20(Alternative)",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "41b987",
+        "hash": "373b6995",
+        "encoded": "You%20can%20also%20pass%20credentials%20programmatically:",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "41b987",
+        "hash": "d46460ff",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "41b987",
+        "hash": "4e1c3799",
+        "encoded": "from%20image_scraper%20import%20ImageScraper",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "41b987",
+        "hash": "a202404f",
+        "encoded": "scraper%20=%20ImageScraper(",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "41b987",
+        "hash": "a95cfa6f",
+        "encoded": "output_file=%22Bynder.xlsx%22,",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "41b987",
+        "hash": "d8ed6f90",
+        "encoded": "username=%22your_username%22,",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "41b987",
+        "hash": "db73a1f5",
+        "encoded": "password=%22your_password%22",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "41b987",
+        "hash": "ab5057c6",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "41b987",
+        "hash": "f93a0dcd",
+        "encoded": "scraper.run(urls)",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "41b987",
+        "hash": "465274ea",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "41b987",
+        "hash": "335eb4b0",
+        "encoded": "##%20How%20Authentication%20Works",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "41b987",
+        "hash": "e2a24d8a",
+        "encoded": "###%20HTTP%20Basic%20Authentication",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "41b987",
+        "hash": "765dec63",
+        "encoded": "The%20scraper%20uses%20HTTP%20Basic%20Authentication%20for:",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "41b987",
+        "hash": "ef758556",
+        "encoded": "-%20**Page%20scraping**:%20When%20fetching%20HTML%20content%20with%20%60requests%60%20library",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "41b987",
+        "hash": "dad4e45b",
+        "encoded": "-%20**Screenshot%20capture**:%20When%20navigating%20to%20image%20URLs%20with%20Selenium",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "41b987",
+        "hash": "7176447e",
+        "encoded": "###%20URL%20Format",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "41b987",
+        "hash": "c0d9892a",
+        "encoded": "For%20protected%20sites,%20you%20can%20provide%20URLs%20in%20two%20formats:",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "41b987",
+        "hash": "d07564f1",
+        "encoded": "1.%20**Standard%20format**%20(credentials%20from%20config.py):",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "41b987",
+        "hash": "fc20e948",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "41b987",
+        "hash": "33df65a3",
+        "encoded": "https://dev.marcjacobs.com/us-en/home",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "41b987",
+        "hash": "b99b67e3",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "41b987",
+        "hash": "912d1324",
+        "encoded": "2.%20**URL%20with%20embedded%20credentials**%20(alternative):",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "41b987",
+        "hash": "40e23bdf",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "41b987",
+        "hash": "eee32757",
+        "encoded": "https://username:password@dev.marcjacobs.com/us-en/home",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "41b987",
+        "hash": "6006e83e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "41b987",
+        "hash": "9e3e8e84",
+        "encoded": "##%20Security%20Best%20Practices",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "41b987",
+        "hash": "7cf15b91",
+        "encoded": "###%201.%20Keep%20config.py%20Private",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "41b987",
+        "hash": "0e6779ab",
+        "encoded": "-%20**Never%20commit**%20%60config.py%60%20to%20version%20control",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "41b987",
+        "hash": "b78962ce",
+        "encoded": "-%20Add%20it%20to%20%60.gitignore%60:",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "41b987",
+        "hash": "23226bcb",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "41b987",
+        "hash": "9febff22",
+        "encoded": "config.py",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "41b987",
+        "hash": "7b8bac46",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "41b987",
+        "hash": "6b57ba43",
+        "encoded": "###%202.%20Use%20Environment%20Variables%20(Advanced)",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "41b987",
+        "hash": "39b119a0",
+        "encoded": "For%20production%20environments,%20consider%20using%20environment%20variables:",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "41b987",
+        "hash": "31414c45",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "41b987",
+        "hash": "6db7159f",
+        "encoded": "import%20os",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "41b987",
+        "hash": "3cbd6584",
+        "encoded": "AUTH_CONFIG%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "41b987",
+        "hash": "044b29d3",
+        "encoded": "'username':%20os.getenv('SCRAPER_USERNAME',%20'default_user'),",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "41b987",
+        "hash": "1a5750b4",
+        "encoded": "'password':%20os.getenv('SCRAPER_PASSWORD',%20'default_pass')",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "41b987",
+        "hash": "20d59727",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "41b987",
+        "hash": "59260015",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "41b987",
+        "hash": "73b0984b",
+        "encoded": "Then%20set%20environment%20variables:",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "41b987",
+        "hash": "9ffeb937",
+        "encoded": "%60%60%60powershell",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "41b987",
+        "hash": "7279e5dd",
+        "encoded": "#%20Windows%20PowerShell",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "41b987",
+        "hash": "7aaf1141",
+        "encoded": "$env:SCRAPER_USERNAME=%22your_username%22",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "41b987",
+        "hash": "f814b140",
+        "encoded": "$env:SCRAPER_PASSWORD=%22your_password%22",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "41b987",
+        "hash": "2e72b4ad",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "41b987",
+        "hash": "71bdfd45",
+        "encoded": "###%203.%20Encrypt%20Sensitive%20Data",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "41b987",
+        "hash": "8be9e77a",
+        "encoded": "For%20enhanced%20security,%20consider%20encrypting%20credentials%20using%20libraries%20like%20%60cryptography%60.",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "41b987",
+        "hash": "0fc3722f",
+        "encoded": "##%20Usage%20Examples",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "41b987",
+        "hash": "ed2d2398",
+        "encoded": "###%20Example%201:%20Basic%20Usage%20with%20config.py",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "41b987",
+        "hash": "d8cb440d",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "41b987",
+        "hash": "60d88f7b",
+        "encoded": "python%20image_scraper.py",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "41b987",
+        "hash": "ea211396",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "41b987",
+        "hash": "6ac3e524",
+        "encoded": "Enter%20URL%20when%20prompted:",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "41b987",
+        "hash": "a80e65bb",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "41b987",
+        "hash": "7f4d6c48",
+        "encoded": "https://dev.marcjacobs.com/us-en/home",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "41b987",
+        "hash": "dcb64610",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "41b987",
+        "hash": "ebd745f9",
+        "encoded": "###%20Example%202:%20Multiple%20Protected%20URLs",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "41b987",
+        "hash": "2fb96899",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "41b987",
+        "hash": "97968baf",
+        "encoded": "python%20image_scraper.py",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "41b987",
+        "hash": "062ff69e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "41b987",
+        "hash": "7b1a24c9",
+        "encoded": "Enter%20URLs%20separated%20by%20commas:",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "41b987",
+        "hash": "bc5b8f89",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "41b987",
+        "hash": "4985820d",
+        "encoded": "https://dev.marcjacobs.com/us-en/home,%20https://dev.marcjacobs.com/us-en/products",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "41b987",
+        "hash": "e52b4fee",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "41b987",
+        "hash": "28da41c7",
+        "encoded": "###%20Example%203:%20Programmatic%20Usage",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "41b987",
+        "hash": "f7c74e55",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "41b987",
+        "hash": "9253521a",
+        "encoded": "from%20image_scraper%20import%20ImageScraper",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "41b987",
+        "hash": "d56b4d0e",
+        "encoded": "urls%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "41b987",
+        "hash": "07a08e28",
+        "encoded": "%22https://dev.marcjacobs.com/us-en/home%22,",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "41b987",
+        "hash": "ad7c1806",
+        "encoded": "%22https://dev.marcjacobs.com/us-en/products%22",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "41b987",
+        "hash": "2a4d784f",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "41b987",
+        "hash": "18ffed9c",
+        "encoded": "scraper%20=%20ImageScraper(output_file=%22Bynder.xlsx%22)",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "41b987",
+        "hash": "64f970aa",
+        "encoded": "scraper.run(urls)",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "41b987",
+        "hash": "15266480",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "41b987",
+        "hash": "a3baa0b4",
+        "encoded": "##%20Troubleshooting",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "41b987",
+        "hash": "e42da91c",
+        "encoded": "###%20Authentication%20Failures",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "41b987",
+        "hash": "e20e45c7",
+        "encoded": "**Problem**:%20401%20Unauthorized%20error",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "41b987",
+        "hash": "397b80f9",
+        "encoded": "-%20**Solution**:%20Verify%20credentials%20in%20%60config.py%60%20are%20correct",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "41b987",
+        "hash": "d081856d",
+        "encoded": "-%20Check%20if%20the%20username/password%20have%20special%20characters%20that%20need%20URL%20encoding",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "41b987",
+        "hash": "29797ab9",
+        "encoded": "**Problem**:%20403%20Forbidden%20error",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "41b987",
+        "hash": "62e1fe19",
+        "encoded": "-%20**Solution**:%20The%20credentials%20may%20be%20correct,%20but%20you%20don't%20have%20permission%20to%20access%20the%20resource",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "41b987",
+        "hash": "cae014bc",
+        "encoded": "-%20Contact%20the%20site%20administrator%20for%20proper%20access%20rights",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "41b987",
+        "hash": "e74c69a5",
+        "encoded": "**Problem**:%20Screenshots%20show%20login%20page%20instead%20of%20images",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "41b987",
+        "hash": "2af39e79",
+        "encoded": "-%20**Solution**:%20The%20site%20may%20use%20form-based%20authentication%20instead%20of%20HTTP%20Basic%20Auth",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "41b987",
+        "hash": "556e4ac5",
+        "encoded": "-%20You%20may%20need%20to%20implement%20custom%20login%20logic%20using%20Selenium",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "41b987",
+        "hash": "e5defdd4",
+        "encoded": "###%20Logging",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "41b987",
+        "hash": "75052ef4",
+        "encoded": "The%20scraper%20logs%20authentication%20status:",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "41b987",
+        "hash": "44b70e7b",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "41b987",
+        "hash": "bf015bdc",
+        "encoded": "2024-03-02%2010:15:30,123%20-%20INFO%20-%20Authentication%20enabled%20for%20user:%20storefront",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "41b987",
+        "hash": "4128aedf",
+        "encoded": "2024-03-02%2010:15:31,456%20-%20INFO%20-%20Using%20HTTP%20Basic%20Authentication%20for:%20dev.marcjacobs.com",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "41b987",
+        "hash": "b5b113d9",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "41b987",
+        "hash": "a04a050e",
+        "encoded": "Check%20logs%20to%20verify%20authentication%20is%20being%20applied%20correctly.",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "41b987",
+        "hash": "244b2596",
+        "encoded": "##%20Configuration%20File%20Reference",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "41b987",
+        "hash": "f9852705",
+        "encoded": "###%20config.py%20Structure",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "41b987",
+        "hash": "10e54b0a",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "41b987",
+        "hash": "667a5f2d",
+        "encoded": "#%20Authentication%20Configuration",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "41b987",
+        "hash": "92653d5c",
+        "encoded": "AUTH_CONFIG%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "41b987",
+        "hash": "0438833d",
+        "encoded": "'username':%20'your_username',",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "41b987",
+        "hash": "c5bbe46a",
+        "encoded": "'password':%20'your_password',",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "41b987",
+        "hash": "c2938672",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "41b987",
+        "hash": "76186363",
+        "encoded": "#%20Timeout%20settings",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "41b987",
+        "hash": "37c6632b",
+        "encoded": "REQUEST_TIMEOUT%20=%2030%20%20#%20seconds%20for%20HTTP%20requests",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "41b987",
+        "hash": "4e2f8c8d",
+        "encoded": "PAGE_LOAD_TIMEOUT%20=%2030%20%20#%20seconds%20for%20Selenium%20page%20loads",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "41b987",
+        "hash": "47eaf8a8",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "41b987",
+        "hash": "7df89017",
+        "encoded": "###%20Optional:%20Site-Specific%20Credentials",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "41b987",
+        "hash": "ed491d13",
+        "encoded": "You%20can%20extend%20%60config.py%60%20to%20support%20multiple%20sites:",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "41b987",
+        "hash": "9386548c",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "41b987",
+        "hash": "d5b7b054",
+        "encoded": "AUTH_CONFIG%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "41b987",
+        "hash": "fe048f3f",
+        "encoded": "'username':%20'default_user',",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "41b987",
+        "hash": "35304fa6",
+        "encoded": "'password':%20'default_pass',",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "41b987",
+        "hash": "8e4913c8",
+        "encoded": "'site_credentials':%20%7B",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "41b987",
+        "hash": "83d73a10",
+        "encoded": "'dev.marcjacobs.com':%20%7B",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "41b987",
+        "hash": "6a9a1fe3",
+        "encoded": "'username':%20'storefront',",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "41b987",
+        "hash": "7a89077b",
+        "encoded": "'password':%20'72MarcJacobs'",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "41b987",
+        "hash": "d70f90de",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "41b987",
+        "hash": "63132a31",
+        "encoded": "'other-site.com':%20%7B",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "41b987",
+        "hash": "2a7c74ce",
+        "encoded": "'username':%20'other_user',",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "41b987",
+        "hash": "b52fc8de",
+        "encoded": "'password':%20'other_pass'",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "41b987",
+        "hash": "e0563286",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "41b987",
+        "hash": "dee02b44",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "41b987",
+        "hash": "b42e774a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "41b987",
+        "hash": "eb6898ef",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "41b987",
+        "hash": "01fa9ccf",
+        "encoded": "##%20Support",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "41b987",
+        "hash": "5395265e",
+        "encoded": "For%20issues%20or%20questions:",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "41b987",
+        "hash": "f0c5f9be",
+        "encoded": "1.%20Check%20the%20logs%20for%20detailed%20error%20messages",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "41b987",
+        "hash": "76b84d32",
+        "encoded": "2.%20Verify%20your%20credentials%20are%20correct",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "41b987",
+        "hash": "e89c7ed8",
+        "encoded": "3.%20Ensure%20the%20target%20site%20uses%20HTTP%20Basic%20Authentication",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "41b987",
+        "hash": "11d16315",
+        "encoded": "4.%20Review%20the%20troubleshooting%20section%20above",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "41b987",
+        "hash": "699a2b4d",
+        "encoded": "##%20Notes",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "41b987",
+        "hash": "537f1b73",
+        "encoded": "-%20The%20scraper%20automatically%20detects%20if%20credentials%20are%20provided%20and%20applies%20them",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "41b987",
+        "hash": "73b715e2",
+        "encoded": "-%20If%20no%20credentials%20are%20configured,%20the%20scraper%20works%20normally%20for%20public%20URLs",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "41b987",
+        "hash": "ae5879bb",
+        "encoded": "-%20Authentication%20is%20applied%20to%20both%20page%20scraping%20and%20screenshot%20capture",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "41b987",
+        "hash": "86a6c1de",
+        "encoded": "-%20Credentials%20are%20embedded%20in%20URLs%20for%20Selenium%20to%20handle%20authentication%20dialogs",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "backend\\.gitignore": {
+    "filename": ".gitignore",
+    "path": "backend\\.gitignore",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "40403e": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772463707,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "ac564fa8",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "40403e",
+        "hash": "b251bcd9",
+        "encoded": "#%20Python",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "40403e",
+        "hash": "7cbb2b27",
+        "encoded": "__pycache__/",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "40403e",
+        "hash": "9493a419",
+        "encoded": "*.py%5Bcod%5D",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "40403e",
+        "hash": "8f080315",
+        "encoded": "*$py.class",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "40403e",
+        "hash": "f95fcc70",
+        "encoded": "*.so",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "40403e",
+        "hash": "22fc3194",
+        "encoded": ".Python",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "40403e",
+        "hash": "01536118",
+        "encoded": "build/",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "40403e",
+        "hash": "0a216ae8",
+        "encoded": "develop-eggs/",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "40403e",
+        "hash": "2c58a2b9",
+        "encoded": "dist/",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "40403e",
+        "hash": "8473ffce",
+        "encoded": "downloads/",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "40403e",
+        "hash": "4d51f5ef",
+        "encoded": "eggs/",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "40403e",
+        "hash": "495ad6ec",
+        "encoded": ".eggs/",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "40403e",
+        "hash": "83ca3340",
+        "encoded": "lib/",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "40403e",
+        "hash": "3c04f890",
+        "encoded": "lib64/",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "40403e",
+        "hash": "f388a84a",
+        "encoded": "parts/",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "40403e",
+        "hash": "e874d555",
+        "encoded": "sdist/",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "40403e",
+        "hash": "c446e63e",
+        "encoded": "var/",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "40403e",
+        "hash": "15ddfd00",
+        "encoded": "wheels/",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "40403e",
+        "hash": "43bd891f",
+        "encoded": "*.egg-info/",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "40403e",
+        "hash": "7df7f612",
+        "encoded": ".installed.cfg",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "40403e",
+        "hash": "5e391e5f",
+        "encoded": "*.egg",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "40403e",
+        "hash": "361ce97a",
+        "encoded": "#%20Virtual%20Environment",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "40403e",
+        "hash": "3cc2160d",
+        "encoded": "venv/",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "40403e",
+        "hash": "bf3a63cf",
+        "encoded": "ENV/",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "40403e",
+        "hash": "90236617",
+        "encoded": "env/",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "40403e",
+        "hash": "05db70c6",
+        "encoded": "#%20IDE",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "40403e",
+        "hash": "7e42100c",
+        "encoded": ".vscode/",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "40403e",
+        "hash": "0595bbe9",
+        "encoded": ".idea/",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "40403e",
+        "hash": "8137c67f",
+        "encoded": "*.swp",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "40403e",
+        "hash": "bb0ff918",
+        "encoded": "*.swo",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "40403e",
+        "hash": "605f4bbb",
+        "encoded": "#%20Logs",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "40403e",
+        "hash": "f8118a54",
+        "encoded": "*.log",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "40403e",
+        "hash": "74301077",
+        "encoded": "#%20Excel%20and%20Screenshots",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "40403e",
+        "hash": "03a0b560",
+        "encoded": "*.xlsx",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "40403e",
+        "hash": "86b33156",
+        "encoded": "screenshots/",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "40403e",
+        "hash": "731352e3",
+        "encoded": "#%20Environment",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "40403e",
+        "hash": "f3717b0a",
+        "encoded": ".env",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "40403e",
+        "hash": "234cd6d4",
+        "encoded": ".env.local",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "40403e",
+        "hash": "556490aa",
+        "encoded": "#%20OS",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "40403e",
+        "hash": "a7c1960c",
+        "encoded": ".DS_Store",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "40403e",
+        "hash": "8d0e9269",
+        "encoded": "Thumbs.db",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,1068 @@
+{
+  "chrome-extension\\INSTALLATION.md": {
+    "filename": "INSTALLATION.md",
+    "path": "chrome-extension\\INSTALLATION.md",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "8a2db2": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772463708,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "5321bcd7",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "060991": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772463788,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "chat",
+        "type": "insertCode",
+        "extraContext": {},
+        "hash": "a73fa21d",
+        "messageId": "system_7ae9b8f0-1648-11f1-9f71-a31a31dfa716",
+        "codeBlockId": "system_7ae9b8f0-1648-11f1-9f71-a31a31dfa716-Codeblock-1",
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "060991",
+        "hash": "00631890",
+        "encoded": "cd%20backend",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "060991",
+        "hash": "a0428937",
+        "encoded": "pip%20install%20-r%20requirements_backend.txt",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "060991",
+        "hash": "4cbf2b50",
+        "encoded": "python%20backend_api.py",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "8a2db2",
+        "hash": "bb863859",
+        "encoded": "##%20Overview",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "8a2db2",
+        "hash": "601d2517",
+        "encoded": "This%20guide%20will%20help%20you%20install%20the%20Image%20Scraper%20Chrome%20Extension%20for%20private%20use%20by%20your%20team.",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "8a2db2",
+        "hash": "7930a23e",
+        "encoded": "##%20Prerequisites",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "8a2db2",
+        "hash": "9525c9c3",
+        "encoded": "-%20Google%20Chrome%20browser",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "8a2db2",
+        "hash": "5b7b2365",
+        "encoded": "-%20Backend%20API%20server%20running%20(see%20backend/README.md)",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "8a2db2",
+        "hash": "d0ea0eae",
+        "encoded": "##%20Installation%20Steps",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "8a2db2",
+        "hash": "07207c12",
+        "encoded": "###%20Step%201:%20Prepare%20Extension%20Files",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "8a2db2",
+        "hash": "3dc8459b",
+        "encoded": "1.%20Ensure%20you%20have%20all%20extension%20files:",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "8a2db2",
+        "hash": "5737431e",
+        "encoded": "-%20%60manifest.json%60",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "8a2db2",
+        "hash": "978ffea1",
+        "encoded": "-%20%60popup.html%60",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "8a2db2",
+        "hash": "9399407d",
+        "encoded": "-%20%60popup.css%60",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "8a2db2",
+        "hash": "cf11c45d",
+        "encoded": "-%20%60popup.js%60",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "8a2db2",
+        "hash": "b3043c22",
+        "encoded": "-%20%60icon.png%60%20(optional%20-%20create%20a%20128x128%20icon)",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "8a2db2",
+        "hash": "9e8dd041",
+        "encoded": "###%20Step%202:%20Load%20Extension%20in%20Chrome",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "8a2db2",
+        "hash": "0bf4104b",
+        "encoded": "1.%20**Open%20Chrome%20Extensions%20Page**",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "8a2db2",
+        "hash": "61f0ddd5",
+        "encoded": "-%20Navigate%20to%20%60chrome://extensions/%60",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "8a2db2",
+        "hash": "3a99e785",
+        "encoded": "-%20Or%20click%20Menu%20(%E2%8B%AE)%20%E2%86%92%20More%20Tools%20%E2%86%92%20Extensions",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "8a2db2",
+        "hash": "95108ed7",
+        "encoded": "2.%20**Enable%20Developer%20Mode**",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "8a2db2",
+        "hash": "d6bb557d",
+        "encoded": "-%20Toggle%20the%20%22Developer%20mode%22%20switch%20in%20the%20top-right%20corner",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "8a2db2",
+        "hash": "25b22305",
+        "encoded": "3.%20**Load%20Unpacked%20Extension**",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "8a2db2",
+        "hash": "96ce62f3",
+        "encoded": "-%20Click%20%22Load%20unpacked%22%20button",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "8a2db2",
+        "hash": "cb9f19bd",
+        "encoded": "-%20Navigate%20to%20the%20%60chrome-extension%60%20folder",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "8a2db2",
+        "hash": "785e66b2",
+        "encoded": "-%20Click%20%22Select%20Folder%22",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "8a2db2",
+        "hash": "39132db4",
+        "encoded": "4.%20**Verify%20Installation**",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "8a2db2",
+        "hash": "de6b7e87",
+        "encoded": "-%20The%20extension%20should%20appear%20in%20your%20extensions%20list",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "8a2db2",
+        "hash": "7ed9f7b0",
+        "encoded": "-%20Pin%20the%20extension%20to%20your%20toolbar%20for%20easy%20access",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "8a2db2",
+        "hash": "8324598f",
+        "encoded": "###%20Step%203:%20Configure%20Backend%20URL",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "8a2db2",
+        "hash": "22d7db11",
+        "encoded": "1.%20**Click%20Extension%20Icon**",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "8a2db2",
+        "hash": "ab11807f",
+        "encoded": "-%20Click%20the%20Image%20Scraper%20icon%20in%20your%20Chrome%20toolbar",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "8a2db2",
+        "hash": "942a351b",
+        "encoded": "2.%20**Enter%20Backend%20URL**",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "8a2db2",
+        "hash": "e478c68c",
+        "encoded": "-%20In%20the%20%22Backend%20Server%20URL%22%20field,%20enter%20your%20backend%20API%20URL",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "8a2db2",
+        "hash": "76408e42",
+        "encoded": "-%20Example:%20%60http://localhost:8000%60%20(local)",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "8a2db2",
+        "hash": "e52c658b",
+        "encoded": "-%20Example:%20%60https://your-server.com%60%20(production)",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "8a2db2",
+        "hash": "243edf44",
+        "encoded": "3.%20**Save%20Configuration**",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "8a2db2",
+        "hash": "7c612b2e",
+        "encoded": "-%20The%20URL%20will%20be%20saved%20automatically%20for%20future%20use",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "8a2db2",
+        "hash": "3f5f6652",
+        "encoded": "##%20Usage",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "8a2db2",
+        "hash": "2bb67cfb",
+        "encoded": "###%20Basic%20Usage",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "8a2db2",
+        "hash": "ce1c7b16",
+        "encoded": "1.%20**Navigate%20to%20Target%20Page**",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "8a2db2",
+        "hash": "46a2e5bd",
+        "encoded": "-%20Open%20the%20web%20page%20you%20want%20to%20scrape",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "8a2db2",
+        "hash": "56bae0ce",
+        "encoded": "2.%20**Open%20Extension**",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "8a2db2",
+        "hash": "52701c7b",
+        "encoded": "-%20Click%20the%20Image%20Scraper%20extension%20icon",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "8a2db2",
+        "hash": "c625ec69",
+        "encoded": "-%20The%20current%20page%20URL%20will%20be%20auto-filled",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "8a2db2",
+        "hash": "540757d7",
+        "encoded": "3.%20**Enter%20Filename**",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "8a2db2",
+        "hash": "e7093385",
+        "encoded": "-%20Type%20a%20base%20filename%20(e.g.,%20%22MyReport%22)",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "8a2db2",
+        "hash": "4a22bb5f",
+        "encoded": "-%20Do%20not%20include%20.xlsx%20extension",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "8a2db2",
+        "hash": "27d6450c",
+        "encoded": "4.%20**Start%20Scraping**",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "8a2db2",
+        "hash": "cdc639ed",
+        "encoded": "-%20Click%20%22Start%20Scraping%22%20button",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "8a2db2",
+        "hash": "2188c6bd",
+        "encoded": "-%20Wait%20for%20processing%20to%20complete",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "8a2db2",
+        "hash": "0c2009d8",
+        "encoded": "5.%20**Download%20Results**",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "8a2db2",
+        "hash": "94e5eb11",
+        "encoded": "-%20Download%20Pass%20scenarios%20file",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "8a2db2",
+        "hash": "38fbdb32",
+        "encoded": "-%20Download%20Fail%20scenarios%20file",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "8a2db2",
+        "hash": "d8e00eb1",
+        "encoded": "-%20Or%20download%20ZIP%20file%20with%20both",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "8a2db2",
+        "hash": "19c0afcf",
+        "encoded": "###%20Advanced%20Configuration",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "8a2db2",
+        "hash": "ff2f4013",
+        "encoded": "####%20Custom%20Backend%20URL",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "8a2db2",
+        "hash": "add9847c",
+        "encoded": "You%20can%20change%20the%20backend%20URL%20anytime:",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "8a2db2",
+        "hash": "05338c88",
+        "encoded": "1.%20Open%20extension%20popup",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "8a2db2",
+        "hash": "000bc0f3",
+        "encoded": "2.%20Update%20%22Backend%20Server%20URL%22%20field",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "8a2db2",
+        "hash": "ca292ae1",
+        "encoded": "3.%20URL%20is%20saved%20automatically",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "8a2db2",
+        "hash": "8c73f5b1",
+        "encoded": "####%20Authentication",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "8a2db2",
+        "hash": "6d56cd7e",
+        "encoded": "If%20your%20target%20pages%20require%20authentication:",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "8a2db2",
+        "hash": "091ce71e",
+        "encoded": "1.%20Configure%20credentials%20in%20backend%20%60config.py%60",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "8a2db2",
+        "hash": "146f7847",
+        "encoded": "2.%20Backend%20will%20use%20credentials%20automatically",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "8a2db2",
+        "hash": "f4dd987f",
+        "encoded": "##%20Distributing%20to%20Team",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "8a2db2",
+        "hash": "bb5653b4",
+        "encoded": "###%20Option%201:%20Shared%20Folder%20(Recommended%20for%20Small%20Teams)",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "8a2db2",
+        "hash": "0022def1",
+        "encoded": "1.%20**Create%20Shared%20Folder**",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "8a2db2",
+        "hash": "cc541ff3",
+        "encoded": "-%20Use%20Google%20Drive,%20Dropbox,%20or%20network%20share",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "8a2db2",
+        "hash": "7ce3aafd",
+        "encoded": "-%20Copy%20the%20%60chrome-extension%60%20folder%20to%20shared%20location",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "8a2db2",
+        "hash": "d76562f9",
+        "encoded": "2.%20**Share%20Installation%20Instructions**",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "8a2db2",
+        "hash": "26e3d68b",
+        "encoded": "-%20Share%20this%20INSTALLATION.md%20file",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "8a2db2",
+        "hash": "50675cf0",
+        "encoded": "-%20Provide%20path%20to%20shared%20folder",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "8a2db2",
+        "hash": "6fbd91f2",
+        "encoded": "-%20Include%20backend%20URL",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "8a2db2",
+        "hash": "ad48d35e",
+        "encoded": "3.%20**Team%20Members%20Install**",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "8a2db2",
+        "hash": "71f9ebf2",
+        "encoded": "-%20Each%20team%20member%20follows%20Step%202%20above",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "8a2db2",
+        "hash": "36ca8ec2",
+        "encoded": "-%20Points%20to%20shared%20folder%20location",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "8a2db2",
+        "hash": "bcf1cb3d",
+        "encoded": "###%20Option%202:%20ZIP%20Distribution",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "8a2db2",
+        "hash": "8668c661",
+        "encoded": "1.%20**Create%20ZIP%20File**",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "8a2db2",
+        "hash": "70748c9a",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "8a2db2",
+        "hash": "5243d6eb",
+        "encoded": "cd%20chrome-extension",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "8a2db2",
+        "hash": "f015db55",
+        "encoded": "zip%20-r%20image-scraper-extension.zip%20.",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "8a2db2",
+        "hash": "61900443",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "8a2db2",
+        "hash": "65db8d64",
+        "encoded": "2.%20**Distribute%20ZIP**",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "8a2db2",
+        "hash": "f936f075",
+        "encoded": "-%20Email%20to%20team%20members",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "8a2db2",
+        "hash": "8123500b",
+        "encoded": "-%20Share%20via%20cloud%20storage",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "8a2db2",
+        "hash": "df50048c",
+        "encoded": "3.%20**Team%20Members%20Install**",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "8a2db2",
+        "hash": "da82ed7d",
+        "encoded": "-%20Extract%20ZIP%20to%20local%20folder",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "8a2db2",
+        "hash": "251951f9",
+        "encoded": "-%20Follow%20Step%202%20above",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "8a2db2",
+        "hash": "49185f19",
+        "encoded": "-%20Load%20from%20extracted%20folder",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "8a2db2",
+        "hash": "82efa753",
+        "encoded": "###%20Option%203:%20Chrome%20Web%20Store%20(Private)",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "8a2db2",
+        "hash": "4e136c0d",
+        "encoded": "**Note:**%20This%20requires%20a%20Chrome%20Web%20Store%20developer%20account%20($5%20one-time%20fee)",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "8a2db2",
+        "hash": "613b7ec1",
+        "encoded": "1.%20**Create%20Developer%20Account**",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "8a2db2",
+        "hash": "272f315c",
+        "encoded": "-%20Go%20to%20%5BChrome%20Web%20Store%20Developer%20Dashboard%5D(https://chrome.google.com/webstore/devconsole)",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "8a2db2",
+        "hash": "1d0dc6cc",
+        "encoded": "-%20Pay%20$5%20registration%20fee",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "8a2db2",
+        "hash": "64a5edf2",
+        "encoded": "2.%20**Prepare%20Extension**",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "8a2db2",
+        "hash": "c2518ceb",
+        "encoded": "-%20Create%20ZIP%20file%20of%20extension",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "8a2db2",
+        "hash": "1a92cc19",
+        "encoded": "-%20Prepare%20screenshots%20and%20description",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "8a2db2",
+        "hash": "08258b6b",
+        "encoded": "3.%20**Upload%20to%20Web%20Store**",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "8a2db2",
+        "hash": "f04afc67",
+        "encoded": "-%20Click%20%22New%20Item%22",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "8a2db2",
+        "hash": "1dee917d",
+        "encoded": "-%20Upload%20ZIP%20file",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "8a2db2",
+        "hash": "615002b5",
+        "encoded": "-%20Fill%20in%20required%20information",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "8a2db2",
+        "hash": "692c5eba",
+        "encoded": "4.%20**Set%20Visibility%20to%20Private**",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "8a2db2",
+        "hash": "f0525977",
+        "encoded": "-%20Choose%20%22Private%22%20visibility",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "8a2db2",
+        "hash": "b4d01c8a",
+        "encoded": "-%20Add%20team%20member%20email%20addresses",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "8a2db2",
+        "hash": "57e8e5f3",
+        "encoded": "-%20Only%20listed%20users%20can%20install",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "8a2db2",
+        "hash": "e971999b",
+        "encoded": "5.%20**Publish**",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "8a2db2",
+        "hash": "4c9e91d9",
+        "encoded": "-%20Submit%20for%20review",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "8a2db2",
+        "hash": "324426cf",
+        "encoded": "-%20Once%20approved,%20share%20link%20with%20team",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "8a2db2",
+        "hash": "c777c041",
+        "encoded": "##%20Updating%20the%20Extension",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "8a2db2",
+        "hash": "6480f252",
+        "encoded": "###%20For%20Unpacked%20Extensions",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "8a2db2",
+        "hash": "e995682d",
+        "encoded": "1.%20**Update%20Files**",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "8a2db2",
+        "hash": "e1103125",
+        "encoded": "-%20Replace%20files%20in%20the%20extension%20folder",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "8a2db2",
+        "hash": "c9685ee5",
+        "encoded": "-%20Or%20update%20shared%20folder",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "8a2db2",
+        "hash": "981fd54b",
+        "encoded": "2.%20**Reload%20Extension**",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "8a2db2",
+        "hash": "45f76a5c",
+        "encoded": "-%20Go%20to%20%60chrome://extensions/%60",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "8a2db2",
+        "hash": "b034022f",
+        "encoded": "-%20Click%20reload%20icon%20(%F0%9F%94%84)%20on%20the%20extension%20card",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "8a2db2",
+        "hash": "b373e1a6",
+        "encoded": "###%20For%20Web%20Store%20Extensions",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "8a2db2",
+        "hash": "6c05599f",
+        "encoded": "1.%20**Update%20Files**",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "8a2db2",
+        "hash": "538b52da",
+        "encoded": "-%20Make%20changes%20to%20extension%20files",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "8a2db2",
+        "hash": "c6c462db",
+        "encoded": "-%20Increment%20version%20in%20%60manifest.json%60",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "8a2db2",
+        "hash": "9f2aa41c",
+        "encoded": "2.%20**Create%20New%20ZIP**",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "8a2db2",
+        "hash": "fbf33269",
+        "encoded": "-%20ZIP%20updated%20files",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "8a2db2",
+        "hash": "555851bc",
+        "encoded": "3.%20**Upload%20Update**",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "8a2db2",
+        "hash": "27696aba",
+        "encoded": "-%20Go%20to%20Developer%20Dashboard",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "8a2db2",
+        "hash": "37c3ce09",
+        "encoded": "-%20Upload%20new%20version",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "8a2db2",
+        "hash": "8497b2ea",
+        "encoded": "-%20Submit%20for%20review",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "8a2db2",
+        "hash": "0e6a0f49",
+        "encoded": "##%20Troubleshooting",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "8a2db2",
+        "hash": "697aff5c",
+        "encoded": "###%20Extension%20Not%20Loading",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "8a2db2",
+        "hash": "6a1bca3d",
+        "encoded": "-%20Ensure%20all%20required%20files%20are%20present",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "8a2db2",
+        "hash": "e081e7b6",
+        "encoded": "-%20Check%20%60manifest.json%60%20for%20syntax%20errors",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "8a2db2",
+        "hash": "9dd83fb8",
+        "encoded": "-%20Verify%20folder%20structure%20is%20correct",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "8a2db2",
+        "hash": "802fa36d",
+        "encoded": "###%20Cannot%20Connect%20to%20Backend",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "8a2db2",
+        "hash": "a683d51a",
+        "encoded": "-%20Verify%20backend%20server%20is%20running",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "8a2db2",
+        "hash": "89cb80b2",
+        "encoded": "-%20Check%20backend%20URL%20is%20correct",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "8a2db2",
+        "hash": "24dd44a1",
+        "encoded": "-%20Ensure%20CORS%20is%20configured%20properly",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "8a2db2",
+        "hash": "10e5cfca",
+        "encoded": "-%20Check%20browser%20console%20for%20errors%20(F12)",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "8a2db2",
+        "hash": "47fd4d7a",
+        "encoded": "###%20Scraping%20Fails",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "8a2db2",
+        "hash": "59914fa8",
+        "encoded": "-%20Check%20page%20URL%20is%20valid",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "8a2db2",
+        "hash": "58f459bf",
+        "encoded": "-%20Verify%20backend%20has%20proper%20authentication",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "8a2db2",
+        "hash": "c0b4cd94",
+        "encoded": "-%20Check%20backend%20logs%20for%20errors",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "8a2db2",
+        "hash": "6084747f",
+        "encoded": "-%20Ensure%20ChromeDriver%20is%20working%20on%20backend",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "8a2db2",
+        "hash": "5ea7c4a6",
+        "encoded": "###%20Downloads%20Not%20Working",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "8a2db2",
+        "hash": "7ec8dac4",
+        "encoded": "-%20Check%20Chrome%20download%20settings",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "8a2db2",
+        "hash": "6ac67a2f",
+        "encoded": "-%20Verify%20popup%20blockers%20are%20disabled",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "8a2db2",
+        "hash": "61e7b4a4",
+        "encoded": "-%20Check%20browser%20console%20for%20errors",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "8a2db2",
+        "hash": "e0f78ba3",
+        "encoded": "##%20Security%20Best%20Practices",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "8a2db2",
+        "hash": "f28fd5c5",
+        "encoded": "1.%20**Backend%20URL**",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "8a2db2",
+        "hash": "5a5d667c",
+        "encoded": "-%20Always%20use%20HTTPS%20in%20production",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "8a2db2",
+        "hash": "011c941b",
+        "encoded": "-%20Never%20expose%20backend%20publicly%20without%20authentication",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "8a2db2",
+        "hash": "170b64d8",
+        "encoded": "2.%20**Extension%20Distribution**",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "8a2db2",
+        "hash": "50b07ccd",
+        "encoded": "-%20Only%20share%20with%20trusted%20team%20members",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "8a2db2",
+        "hash": "dc4947a6",
+        "encoded": "-%20Use%20private%20Web%20Store%20listing%20if%20possible",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "8a2db2",
+        "hash": "c8a7c1b4",
+        "encoded": "3.%20**Credentials**",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "8a2db2",
+        "hash": "83f5f244",
+        "encoded": "-%20Never%20hardcode%20credentials%20in%20extension",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "8a2db2",
+        "hash": "1cca1c9a",
+        "encoded": "-%20Store%20credentials%20securely%20in%20backend%20only",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "8a2db2",
+        "hash": "8c54ff87",
+        "encoded": "4.%20**Updates**",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "8a2db2",
+        "hash": "ad6efc52",
+        "encoded": "-%20Keep%20extension%20updated",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "8a2db2",
+        "hash": "c675412a",
+        "encoded": "-%20Notify%20team%20of%20security%20updates",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "8a2db2",
+        "hash": "f51e030d",
+        "encoded": "##%20Support",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "8a2db2",
+        "hash": "1b69887b",
+        "encoded": "For%20issues%20or%20questions:",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "8a2db2",
+        "hash": "f159acb3",
+        "encoded": "1.%20Check%20browser%20console%20(F12)%20for%20errors",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "8a2db2",
+        "hash": "ce2a39a9",
+        "encoded": "2.%20Check%20backend%20logs",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "8a2db2",
+        "hash": "6cdfa3a1",
+        "encoded": "3.%20Review%20this%20documentation",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "8a2db2",
+        "hash": "8efc7575",
+        "encoded": "4.%20Contact%20your%20team%20administrator",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "8a2db2",
+        "hash": "32962742",
+        "encoded": "##%20Version%20History",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "8a2db2",
+        "hash": "1c6404da",
+        "encoded": "-%20**v1.0.0**%20-%20Initial%20release",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "8a2db2",
+        "hash": "c3ca7981",
+        "encoded": "-%20Image%20scraping%20from%20current%20page",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "8a2db2",
+        "hash": "5de5ac99",
+        "encoded": "-%20Pass/Fail%20Excel%20reports",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "8a2db2",
+        "hash": "930a7638",
+        "encoded": "-%20ZIP%20download%20option",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "8a2db2",
+        "hash": "d5fa93a8",
+        "encoded": "-%20Backend%20URL%20configuration",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

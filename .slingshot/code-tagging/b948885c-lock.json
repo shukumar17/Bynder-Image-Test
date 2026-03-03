@@ -1,0 +1,903 @@
+{
+  "backup\\README.md": {
+    "filename": "README.md",
+    "path": "backup\\README.md",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "f40c6f": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772463282,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "4f2e3be9",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "f40c6f",
+        "hash": "bb52df2a",
+        "encoded": "#%20BACKUP%20-%20Image%20Scraper%20and%20Screenshot%20Validator",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "f40c6f",
+        "hash": "21f47367",
+        "encoded": "**This%20is%20a%20backup%20copy%20created%20on%20request**",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "f40c6f",
+        "hash": "bcbecc65",
+        "encoded": "##%20Original%20Project%20Files%20Backed%20Up:",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "f40c6f",
+        "hash": "3e01f5cb",
+        "encoded": "-%20image_scraper.py%20(main%20script)",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "f40c6f",
+        "hash": "89b7e7fd",
+        "encoded": "-%20config.py%20(authentication%20configuration)",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "f40c6f",
+        "hash": "373e21a5",
+        "encoded": "-%20requirements.txt%20(Python%20dependencies)",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "f40c6f",
+        "hash": "97f3589b",
+        "encoded": "-%20README.md%20(project%20documentation)",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "f40c6f",
+        "hash": "f044a072",
+        "encoded": "-%20README_AUTH.md%20(authentication%20guide)",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "f40c6f",
+        "hash": "83a28cb5",
+        "encoded": "-%20USAGE_GUIDE.md%20(usage%20instructions)",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "f40c6f",
+        "hash": "c50d22b0",
+        "encoded": "-%20fix_webdriver.py%20(troubleshooting%20script)",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "f40c6f",
+        "hash": "e8055aac",
+        "encoded": "##%20Restore%20Instructions:",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "f40c6f",
+        "hash": "f14f996d",
+        "encoded": "If%20you%20need%20to%20restore%20from%20this%20backup,%20copy%20all%20files%20from%20the%20backup%20folder%20to%20your%20working%20directory.",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "f40c6f",
+        "hash": "62e3d26b",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "f40c6f",
+        "hash": "fd838dac",
+        "encoded": "#%20Image%20Scraper%20and%20Screenshot%20Validator",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "f40c6f",
+        "hash": "7f77efaa",
+        "encoded": "A%20Python-based%20mini%20project%20that%20scrapes%20image%20URLs%20from%20web%20pages,%20validates%20them%20by%20taking%20screenshots,%20and%20generates%20an%20Excel%20report%20with%20the%20results.",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "f40c6f",
+        "hash": "e1a49eb0",
+        "encoded": "##%20Features",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "f40c6f",
+        "hash": "fde0bbe0",
+        "encoded": "-%20%E2%9C%85%20Scrapes%20all%20image%20URLs%20from%20one%20or%20multiple%20web%20pages",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "f40c6f",
+        "hash": "c7eafce0",
+        "encoded": "-%20%E2%9C%85%20Extracts%20images%20from%20%60%3Cimg%3E%60%20tags%20(including%20%60src%60%20and%20%60data-src%60%20attributes)",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "f40c6f",
+        "hash": "6b8b8c95",
+        "encoded": "-%20%E2%9C%85%20Extracts%20poster%20images%20from%20%60%3Cvideo%3E%60%20tags",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "f40c6f",
+        "hash": "94ce4b2c",
+        "encoded": "-%20%E2%9C%85%20Takes%20screenshots%20of%20each%20image%20URL%20using%20Selenium",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "f40c6f",
+        "hash": "565c8f74",
+        "encoded": "-%20%E2%9C%85%20Generates%20Excel%20report%20with:",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "f40c6f",
+        "hash": "ad1d2dfa",
+        "encoded": "-%20Image%20URLs",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "f40c6f",
+        "hash": "98e4fee6",
+        "encoded": "-%20Screenshot%20thumbnails",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "f40c6f",
+        "hash": "524c5a49",
+        "encoded": "-%20Validation%20status%20(Pass/Fail)",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "f40c6f",
+        "hash": "f8fe9e87",
+        "encoded": "-%20%E2%9C%85%20Handles%20errors%20gracefully%20with%20comprehensive%20logging",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "f40c6f",
+        "hash": "afc2b683",
+        "encoded": "-%20%E2%9C%85%20Follows%20Python%20best%20practices%20and%20security%20guidelines",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "f40c6f",
+        "hash": "cff1ffd0",
+        "encoded": "##%20Requirements",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "f40c6f",
+        "hash": "779b89d0",
+        "encoded": "-%20Python%203.8%20or%20higher",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "f40c6f",
+        "hash": "4182acd1",
+        "encoded": "-%20Chrome%20browser%20(for%20Selenium%20WebDriver)",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "f40c6f",
+        "hash": "1ae46b17",
+        "encoded": "##%20Installation",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "f40c6f",
+        "hash": "37a89411",
+        "encoded": "1.%20**Clone%20or%20download%20this%20project**",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "f40c6f",
+        "hash": "dea87a43",
+        "encoded": "2.%20**Create%20a%20virtual%20environment**%20(recommended):",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "f40c6f",
+        "hash": "bfce0340",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "f40c6f",
+        "hash": "40ada36a",
+        "encoded": "python%20-m%20venv%20venv",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "f40c6f",
+        "hash": "af62c344",
+        "encoded": "#%20On%20Windows",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "f40c6f",
+        "hash": "bccda0fa",
+        "encoded": "venv%5CScripts%5Cactivate",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "f40c6f",
+        "hash": "3a63932a",
+        "encoded": "#%20On%20macOS/Linux",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "f40c6f",
+        "hash": "7a2b840d",
+        "encoded": "source%20venv/bin/activate",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "f40c6f",
+        "hash": "b91fdb39",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "f40c6f",
+        "hash": "def548dc",
+        "encoded": "3.%20**Install%20dependencies**:",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "f40c6f",
+        "hash": "9315df62",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "f40c6f",
+        "hash": "4c14cb0a",
+        "encoded": "pip%20install%20-r%20requirements.txt",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "f40c6f",
+        "hash": "6c7a47da",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "f40c6f",
+        "hash": "f832429a",
+        "encoded": "##%20Usage",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "f40c6f",
+        "hash": "723e7882",
+        "encoded": "###%20Interactive%20Mode",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "f40c6f",
+        "hash": "d4bb5d3f",
+        "encoded": "Run%20the%20script%20and%20enter%20URLs%20when%20prompted:",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "f40c6f",
+        "hash": "a9bc0f1e",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "f40c6f",
+        "hash": "5eeeea5c",
+        "encoded": "python%20image_scraper.py",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "f40c6f",
+        "hash": "6053681b",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "f40c6f",
+        "hash": "6a2cfe7b",
+        "encoded": "You'll%20be%20asked%20to%20enter%20one%20or%20multiple%20URLs%20separated%20by%20commas:",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "f40c6f",
+        "hash": "6edcfbbd",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "f40c6f",
+        "hash": "b0e82bc7",
+        "encoded": "Enter%20URL(s)%20separated%20by%20commas:%20https://example.com,%20https://another-site.com",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "f40c6f",
+        "hash": "d2a4f350",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "f40c6f",
+        "hash": "a3058bea",
+        "encoded": "###%20Programmatic%20Usage",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "f40c6f",
+        "hash": "106057e3",
+        "encoded": "You%20can%20also%20use%20the%20%60ImageScraper%60%20class%20in%20your%20own%20code:",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "f40c6f",
+        "hash": "d08e7863",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "f40c6f",
+        "hash": "58cdb1da",
+        "encoded": "from%20image_scraper%20import%20ImageScraper",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "f40c6f",
+        "hash": "67fb8d27",
+        "encoded": "#%20Create%20scraper%20instance",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "f40c6f",
+        "hash": "9d28291b",
+        "encoded": "scraper%20=%20ImageScraper(output_file=%22my_results.xlsx%22)",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "f40c6f",
+        "hash": "c3179e9d",
+        "encoded": "#%20Process%20URLs",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "f40c6f",
+        "hash": "b29372fc",
+        "encoded": "urls%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "f40c6f",
+        "hash": "6659a8db",
+        "encoded": "%22https://example.com%22,",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "f40c6f",
+        "hash": "a747989f",
+        "encoded": "%22https://another-site.com%22",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "f40c6f",
+        "hash": "86e98eda",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "f40c6f",
+        "hash": "4b163e38",
+        "encoded": "scraper.run(urls)",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "f40c6f",
+        "hash": "d98a3315",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "f40c6f",
+        "hash": "eae7fe27",
+        "encoded": "##%20Output",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "f40c6f",
+        "hash": "fc8d8d10",
+        "encoded": "The%20script%20generates:",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "f40c6f",
+        "hash": "dd3a1fc5",
+        "encoded": "1.%20**Excel%20File**%20(%60image_results.xlsx%60):",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "f40c6f",
+        "hash": "f583e530",
+        "encoded": "-%20Column%20A:%20Image%20URLs",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "f40c6f",
+        "hash": "aafc9784",
+        "encoded": "-%20Column%20B:%20Screenshot%20thumbnails%20(200x200px)",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "f40c6f",
+        "hash": "e814e5ee",
+        "encoded": "-%20Column%20C:%20Status%20(Pass/Fail)",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "f40c6f",
+        "hash": "991d3c4e",
+        "encoded": "2.%20**Screenshots%20Folder**%20(%60screenshots/%60):",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "f40c6f",
+        "hash": "d41117cc",
+        "encoded": "-%20Original%20screenshots:%20%60screenshot_1.png%60,%20%60screenshot_2.png%60,%20etc.",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "f40c6f",
+        "hash": "2450e085",
+        "encoded": "-%20Thumbnails:%20%60screenshot_1_thumb.png%60,%20%60screenshot_2_thumb.png%60,%20etc.",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "f40c6f",
+        "hash": "6cb77f7d",
+        "encoded": "##%20How%20It%20Works",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "f40c6f",
+        "hash": "d3f35ec1",
+        "encoded": "1.%20**URL%20Validation**:%20Validates%20input%20URLs%20to%20ensure%20they're%20properly%20formatted",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "f40c6f",
+        "hash": "b9e952ef",
+        "encoded": "2.%20**Page%20Scraping**:%20Uses%20BeautifulSoup%20to%20parse%20HTML%20and%20extract%20image%20URLs",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "f40c6f",
+        "hash": "ee3fccbb",
+        "encoded": "3.%20**URL%20Normalization**:%20Converts%20relative%20URLs%20to%20absolute%20URLs",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "f40c6f",
+        "hash": "56ab8ab4",
+        "encoded": "4.%20**Screenshot%20Capture**:%20Uses%20Selenium%20WebDriver%20to%20navigate%20to%20each%20image%20and%20capture%20a%20screenshot",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "f40c6f",
+        "hash": "984789f5",
+        "encoded": "5.%20**Validation**:%20Checks%20if%20screenshots%20were%20successfully%20created",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "f40c6f",
+        "hash": "4701d334",
+        "encoded": "6.%20**Excel%20Generation**:%20Creates%20a%20comprehensive%20report%20with%20embedded%20images",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "f40c6f",
+        "hash": "e6b08fe0",
+        "encoded": "##%20Error%20Handling",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "f40c6f",
+        "hash": "7863165a",
+        "encoded": "-%20Invalid%20URLs%20are%20logged%20and%20skipped",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "f40c6f",
+        "hash": "db6b9090",
+        "encoded": "-%20Network%20errors%20are%20caught%20and%20logged",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "f40c6f",
+        "hash": "827c63a9",
+        "encoded": "-%20Failed%20screenshots%20are%20marked%20as%20%22Fail%22%20in%20the%20status%20column",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "f40c6f",
+        "hash": "53f66111",
+        "encoded": "-%20WebDriver%20errors%20are%20handled%20gracefully",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "f40c6f",
+        "hash": "62a48ecb",
+        "encoded": "-%20All%20errors%20are%20logged%20with%20timestamps%20and%20context",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "f40c6f",
+        "hash": "ce77a4eb",
+        "encoded": "##%20Security%20Features",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "f40c6f",
+        "hash": "d80e4b7d",
+        "encoded": "-%20No%20hardcoded%20credentials",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "f40c6f",
+        "hash": "fe28ae5e",
+        "encoded": "-%20Input%20validation%20for%20URLs",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "f40c6f",
+        "hash": "70b968f2",
+        "encoded": "-%20Safe%20HTML%20parsing%20with%20BeautifulSoup",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "f40c6f",
+        "hash": "b23b0e7b",
+        "encoded": "-%20Timeout%20protection%20for%20network%20requests",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "f40c6f",
+        "hash": "e7cbd675",
+        "encoded": "-%20Resource%20cleanup%20with%20context%20managers",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "f40c6f",
+        "hash": "241fb124",
+        "encoded": "-%20Comprehensive%20error%20handling",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "f40c6f",
+        "hash": "f15b7c85",
+        "encoded": "##%20Logging",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "f40c6f",
+        "hash": "dfecac01",
+        "encoded": "The%20script%20provides%20detailed%20logging:",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "f40c6f",
+        "hash": "d65f4827",
+        "encoded": "-%20INFO:%20Progress%20updates%20and%20successful%20operations",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "f40c6f",
+        "hash": "c505d8a6",
+        "encoded": "-%20WARNING:%20Non-critical%20issues%20(e.g.,%20no%20images%20found)",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "f40c6f",
+        "hash": "505a89dd",
+        "encoded": "-%20ERROR:%20Critical%20errors%20with%20context",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "f40c6f",
+        "hash": "978a6312",
+        "encoded": "Logs%20are%20displayed%20in%20the%20console%20with%20timestamps.",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "f40c6f",
+        "hash": "9d02ff09",
+        "encoded": "##%20Troubleshooting",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "f40c6f",
+        "hash": "be44d405",
+        "encoded": "###%20Chrome%20Driver%20Issues",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "f40c6f",
+        "hash": "0e6459e3",
+        "encoded": "If%20you%20encounter%20Chrome%20driver%20issues:",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "f40c6f",
+        "hash": "cff939b2",
+        "encoded": "-%20The%20script%20uses%20%60webdriver-manager%60%20to%20automatically%20download%20the%20correct%20driver",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "f40c6f",
+        "hash": "33ee6087",
+        "encoded": "-%20Ensure%20Chrome%20browser%20is%20installed%20on%20your%20system",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "f40c6f",
+        "hash": "332391df",
+        "encoded": "-%20Check%20that%20your%20Chrome%20version%20is%20up%20to%20date",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "f40c6f",
+        "hash": "33cce370",
+        "encoded": "###%20Memory%20Issues",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "f40c6f",
+        "hash": "db4c9995",
+        "encoded": "For%20large%20numbers%20of%20images:",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "f40c6f",
+        "hash": "3d44aa6c",
+        "encoded": "-%20The%20script%20processes%20images%20sequentially%20to%20manage%20memory",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "f40c6f",
+        "hash": "2b658eef",
+        "encoded": "-%20Screenshots%20are%20resized%20to%20thumbnails%20(200x200px)%20for%20Excel",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "f40c6f",
+        "hash": "6ea58b7d",
+        "encoded": "-%20Consider%20processing%20URLs%20in%20smaller%20batches",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "f40c6f",
+        "hash": "1d8f82da",
+        "encoded": "###%20Network%20Errors",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "f40c6f",
+        "hash": "4755bede",
+        "encoded": "-%20Ensure%20you%20have%20a%20stable%20internet%20connection",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "f40c6f",
+        "hash": "1c501f75",
+        "encoded": "-%20Some%20websites%20may%20block%20automated%20requests",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "f40c6f",
+        "hash": "4638c4d1",
+        "encoded": "-%20The%20script%20includes%20a%20User-Agent%20header%20to%20improve%20compatibility",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "f40c6f",
+        "hash": "c04a11b3",
+        "encoded": "##%20Customization",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "f40c6f",
+        "hash": "afc4565b",
+        "encoded": "You%20can%20customize%20various%20parameters:",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "f40c6f",
+        "hash": "c09dc7af",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "f40c6f",
+        "hash": "fc4a35c6",
+        "encoded": "#%20Change%20output%20file%20name",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "f40c6f",
+        "hash": "fdc3dda6",
+        "encoded": "scraper%20=%20ImageScraper(output_file=%22custom_name.xlsx%22)",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "f40c6f",
+        "hash": "5111ef66",
+        "encoded": "#%20Modify%20screenshot%20directory%20(in%20the%20class)",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "f40c6f",
+        "hash": "ca9cdf91",
+        "encoded": "self.screenshot_dir%20=%20%22my_screenshots%22",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "f40c6f",
+        "hash": "26bb8e18",
+        "encoded": "#%20Adjust%20timeouts%20(in%20_initialize_driver%20method)",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "f40c6f",
+        "hash": "17c744c0",
+        "encoded": "self.driver.set_page_load_timeout(60)%20%20#%2060%20seconds",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "f40c6f",
+        "hash": "cdc17032",
+        "encoded": "#%20Change%20screenshot%20size%20(in%20create_excel_report%20method)",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "f40c6f",
+        "hash": "19e8609b",
+        "encoded": "img.thumbnail((300,%20300))%20%20#%20300x300px%20thumbnails",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "f40c6f",
+        "hash": "ec94677a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "f40c6f",
+        "hash": "d4641b16",
+        "encoded": "##%20Dependencies",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "f40c6f",
+        "hash": "0afd2c79",
+        "encoded": "-%20**requests**:%20HTTP%20library%20for%20fetching%20web%20pages",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "f40c6f",
+        "hash": "198c0977",
+        "encoded": "-%20**beautifulsoup4**:%20HTML%20parsing%20and%20scraping",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "f40c6f",
+        "hash": "96df9297",
+        "encoded": "-%20**selenium**:%20Browser%20automation%20for%20screenshots",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "f40c6f",
+        "hash": "629cae33",
+        "encoded": "-%20**openpyxl**:%20Excel%20file%20creation%20and%20manipulation",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "f40c6f",
+        "hash": "7ff08dae",
+        "encoded": "-%20**Pillow**:%20Image%20processing%20and%20resizing",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "f40c6f",
+        "hash": "f25265c8",
+        "encoded": "-%20**webdriver-manager**:%20Automatic%20WebDriver%20management",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "f40c6f",
+        "hash": "1eefb1f0",
+        "encoded": "##%20License",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "f40c6f",
+        "hash": "6952160e",
+        "encoded": "This%20project%20is%20provided%20as-is%20for%20educational%20and%20practical%20purposes.",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "f40c6f",
+        "hash": "9801cd14",
+        "encoded": "##%20Contributing",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "f40c6f",
+        "hash": "16d13ddd",
+        "encoded": "Feel%20free%20to%20enhance%20this%20project%20by:",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "f40c6f",
+        "hash": "e2d8f678",
+        "encoded": "-%20Adding%20support%20for%20more%20image%20sources%20(e.g.,%20CSS%20backgrounds)",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "f40c6f",
+        "hash": "32c76018",
+        "encoded": "-%20Implementing%20parallel%20processing%20for%20faster%20execution",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "f40c6f",
+        "hash": "d218eea8",
+        "encoded": "-%20Adding%20support%20for%20authentication-required%20pages",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "f40c6f",
+        "hash": "34050fe9",
+        "encoded": "-%20Creating%20a%20GUI%20interface",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "f40c6f",
+        "hash": "2e01d814",
+        "encoded": "-%20Adding%20export%20to%20other%20formats%20(CSV,%20JSON,%20etc.)",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "f40c6f",
+        "hash": "90c511a5",
+        "encoded": "##%20Author",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "f40c6f",
+        "hash": "0127ed61",
+        "encoded": "Created%20as%20a%20mini%20project%20for%20web%20scraping%20and%20automation%20tasks.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

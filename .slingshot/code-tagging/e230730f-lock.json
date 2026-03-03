@@ -1,0 +1,207 @@
+{
+  "config.py": {
+    "filename": "config.py",
+    "path": "config.py",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "525f20": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772453444,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "e96e5496",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "525f20",
+        "hash": "4ad86cb3",
+        "encoded": "%22%22%22Configuration%20file%20for%20authentication%20credentials.",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "525f20",
+        "hash": "8fd57031",
+        "encoded": "Store%20your%20protected%20site%20credentials%20here.",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "525f20",
+        "hash": "05a38896",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "525f20",
+        "hash": "27e31001",
+        "encoded": "#%20Authentication%20Configuration",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "525f20",
+        "hash": "7460076b",
+        "encoded": "AUTH_CONFIG%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "525f20",
+        "hash": "8dbb185e",
+        "encoded": "#%20HTTP%20Basic%20Authentication",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "525f20",
+        "hash": "b1c28767",
+        "encoded": "'username':%20'storefront',",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "525f20",
+        "hash": "eae938d2",
+        "encoded": "'password':%20'72MarcJacobs',",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "525f20",
+        "hash": "95400f8f",
+        "encoded": "#%20Optional:%20Add%20more%20authentication%20configurations%20as%20needed",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "525f20",
+        "hash": "d7d3be26",
+        "encoded": "#%20For%20different%20sites,%20you%20can%20add%20site-specific%20credentials:",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "525f20",
+        "hash": "d0b6711a",
+        "encoded": "#%20'site_credentials':%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "525f20",
+        "hash": "6da36264",
+        "encoded": "#%20%20%20%20%20'dev.marcjacobs.com':%20%7B",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "525f20",
+        "hash": "6ec309fe",
+        "encoded": "#%20%20%20%20%20%20%20%20%20'username':%20'storefront',",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "525f20",
+        "hash": "f41d426c",
+        "encoded": "#%20%20%20%20%20%20%20%20%20'password':%20'72MarcJacobs'",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "525f20",
+        "hash": "7a09dde4",
+        "encoded": "#%20%20%20%20%20%7D,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "525f20",
+        "hash": "358e1f88",
+        "encoded": "#%20%20%20%20%20'other-site.com':%20%7B",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "525f20",
+        "hash": "3506754f",
+        "encoded": "#%20%20%20%20%20%20%20%20%20'username':%20'user',",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "525f20",
+        "hash": "fc42de76",
+        "encoded": "#%20%20%20%20%20%20%20%20%20'password':%20'pass'",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "525f20",
+        "hash": "d9825716",
+        "encoded": "#%20%20%20%20%20%7D",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "525f20",
+        "hash": "78d9c34c",
+        "encoded": "#%20%7D",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "525f20",
+        "hash": "7b3531ab",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "525f20",
+        "hash": "f5d3e38e",
+        "encoded": "#%20Selenium%20Authentication%20(for%20sites%20requiring%20form-based%20login)",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "525f20",
+        "hash": "1c058cbc",
+        "encoded": "SELENIUM_AUTH%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "525f20",
+        "hash": "2fd6b659",
+        "encoded": "'enabled':%20False,%20%20#%20Set%20to%20True%20if%20you%20need%20form-based%20login",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "525f20",
+        "hash": "41424fbb",
+        "encoded": "'login_url':%20'',%20%20#%20URL%20of%20the%20login%20page",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "525f20",
+        "hash": "7274400a",
+        "encoded": "'username_field':%20'username',%20%20#%20ID%20or%20name%20of%20username%20field",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "525f20",
+        "hash": "315443ca",
+        "encoded": "'password_field':%20'password',%20%20#%20ID%20or%20name%20of%20password%20field",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "525f20",
+        "hash": "1c38d4a3",
+        "encoded": "'submit_button':%20'submit',%20%20#%20ID%20or%20name%20of%20submit%20button",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "525f20",
+        "hash": "699fd80f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "525f20",
+        "hash": "22dcd869",
+        "encoded": "#%20Timeout%20settings",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

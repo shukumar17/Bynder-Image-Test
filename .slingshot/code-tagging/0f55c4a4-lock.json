@@ -1,0 +1,849 @@
+{
+  "backend\\backend_api.py": {
+    "filename": "backend_api.py",
+    "path": "backend\\backend_api.py",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "009395": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772463706,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "e2ec8795",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "009395",
+        "hash": "5764ad95",
+        "encoded": "%22%22%22FastAPI%20Backend%20for%20Image%20Scraper%20Chrome%20Extension",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "009395",
+        "hash": "d860c681",
+        "encoded": "This%20backend%20service%20receives%20scraping%20requests%20from%20the%20Chrome%20extension,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "009395",
+        "hash": "b7f39257",
+        "encoded": "processes%20them%20using%20the%20ImageScraper%20class,%20and%20returns%20Excel%20files.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "009395",
+        "hash": "6766a9a9",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "009395",
+        "hash": "e342fcf9",
+        "encoded": "from%20fastapi%20import%20FastAPI,%20HTTPException",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "009395",
+        "hash": "60945f39",
+        "encoded": "from%20fastapi.middleware.cors%20import%20CORSMiddleware",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "009395",
+        "hash": "8fbac8fe",
+        "encoded": "from%20pydantic%20import%20BaseModel",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "009395",
+        "hash": "e6d3fdc2",
+        "encoded": "import%20base64",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "009395",
+        "hash": "a325dfd0",
+        "encoded": "import%20os",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "009395",
+        "hash": "5fd21344",
+        "encoded": "import%20sys",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "009395",
+        "hash": "148ae6e6",
+        "encoded": "import%20io",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "009395",
+        "hash": "ff968254",
+        "encoded": "import%20zipfile",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "009395",
+        "hash": "1938abc7",
+        "encoded": "from%20typing%20import%20Optional",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "009395",
+        "hash": "358b648b",
+        "encoded": "import%20logging",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "009395",
+        "hash": "77281486",
+        "encoded": "#%20Add%20parent%20directory%20to%20path%20to%20import%20ImageScraper",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "009395",
+        "hash": "98f5337f",
+        "encoded": "sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "009395",
+        "hash": "db8075e6",
+        "encoded": "from%20image_scraper%20import%20ImageScraper",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "009395",
+        "hash": "8566f67b",
+        "encoded": "#%20Configure%20logging",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "009395",
+        "hash": "c3a43cae",
+        "encoded": "logging.basicConfig(",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "009395",
+        "hash": "67770835",
+        "encoded": "level=logging.INFO,",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "009395",
+        "hash": "82ef992c",
+        "encoded": "format='%25(asctime)s%20-%20%25(levelname)s%20-%20%25(message)s'",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "009395",
+        "hash": "0306068e",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "009395",
+        "hash": "b618ba27",
+        "encoded": "logger%20=%20logging.getLogger(__name__)",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "009395",
+        "hash": "675eaba4",
+        "encoded": "app%20=%20FastAPI(",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "009395",
+        "hash": "9811c74b",
+        "encoded": "title=%22Image%20Scraper%20API%22,",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "009395",
+        "hash": "ef587abf",
+        "encoded": "description=%22Backend%20API%20for%20Chrome%20Extension%20Image%20Scraper%22,",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "009395",
+        "hash": "7ab05f1f",
+        "encoded": "version=%221.0.0%22",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "009395",
+        "hash": "47ea41e0",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "009395",
+        "hash": "b3b2b5ce",
+        "encoded": "#%20Configure%20CORS%20to%20allow%20Chrome%20extension%20to%20communicate",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "009395",
+        "hash": "5e01d2ba",
+        "encoded": "app.add_middleware(",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "009395",
+        "hash": "da040ef3",
+        "encoded": "CORSMiddleware,",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "009395",
+        "hash": "925a29d9",
+        "encoded": "allow_origins=%5B%22*%22%5D,%20%20#%20In%20production,%20specify%20your%20extension%20ID",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "009395",
+        "hash": "9f3494a3",
+        "encoded": "allow_credentials=True,",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "009395",
+        "hash": "9a851b33",
+        "encoded": "allow_methods=%5B%22*%22%5D,",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "009395",
+        "hash": "b7ece2db",
+        "encoded": "allow_headers=%5B%22*%22%5D,",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "009395",
+        "hash": "fce7b66c",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "009395",
+        "hash": "7fee5028",
+        "encoded": "class%20ScrapeRequest(BaseModel):",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "009395",
+        "hash": "5ecc14b5",
+        "encoded": "page_url:%20str",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "009395",
+        "hash": "e972c3eb",
+        "encoded": "base_filename:%20str",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "009395",
+        "hash": "f303b5cf",
+        "encoded": "username:%20Optional%5Bstr%5D%20=%20None",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "009395",
+        "hash": "4785029e",
+        "encoded": "password:%20Optional%5Bstr%5D%20=%20None",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "009395",
+        "hash": "5b517e78",
+        "encoded": "class%20ScrapeResponse(BaseModel):",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "009395",
+        "hash": "fe234327",
+        "encoded": "pass_file:%20str%20%20#%20Base64%20encoded",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "009395",
+        "hash": "b2b3b9ce",
+        "encoded": "fail_file:%20str%20%20#%20Base64%20encoded",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "009395",
+        "hash": "8831e6bb",
+        "encoded": "zip_file:%20str%20%20%20#%20Base64%20encoded",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "009395",
+        "hash": "31f40a63",
+        "encoded": "pass_filename:%20str",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "009395",
+        "hash": "6329c31f",
+        "encoded": "fail_filename:%20str",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "009395",
+        "hash": "9a34f85b",
+        "encoded": "zip_filename:%20str",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "009395",
+        "hash": "40555ffe",
+        "encoded": "message:%20str",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "009395",
+        "hash": "ca9c71f1",
+        "encoded": "@app.get(%22/%22)",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "009395",
+        "hash": "9ace17a2",
+        "encoded": "async%20def%20root():",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "009395",
+        "hash": "e2c26e25",
+        "encoded": "%22%22%22Health%20check%20endpoint%22%22%22",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "009395",
+        "hash": "a8163eb9",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "009395",
+        "hash": "bcb6bd0d",
+        "encoded": "%22status%22:%20%22running%22,",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "009395",
+        "hash": "15d848dd",
+        "encoded": "%22service%22:%20%22Image%20Scraper%20API%22,",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "009395",
+        "hash": "1045b660",
+        "encoded": "%22version%22:%20%221.0.0%22",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "009395",
+        "hash": "912d88e4",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "009395",
+        "hash": "2e157d9e",
+        "encoded": "@app.post(%22/api/scrape%22,%20response_model=ScrapeResponse)",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "009395",
+        "hash": "b57ea0c7",
+        "encoded": "async%20def%20scrape_images(request:%20ScrapeRequest):",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "009395",
+        "hash": "e3e8ec0f",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "009395",
+        "hash": "2e4fa224",
+        "encoded": "Main%20endpoint%20to%20scrape%20images%20from%20a%20page%20URL.",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "009395",
+        "hash": "ac537328",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "009395",
+        "hash": "1be430d3",
+        "encoded": "request:%20ScrapeRequest%20containing%20page_url%20and%20base_filename",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "009395",
+        "hash": "413e5616",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "009395",
+        "hash": "6ffae12a",
+        "encoded": "ScrapeResponse%20with%20base64%20encoded%20Excel%20files",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "009395",
+        "hash": "9b3c6ab3",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "009395",
+        "hash": "111d9894",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "009395",
+        "hash": "33d6015b",
+        "encoded": "logger.info(f%22Received%20scraping%20request%20for%20URL:%20%7Brequest.page_url%7D%22)",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "009395",
+        "hash": "abace740",
+        "encoded": "logger.info(f%22Base%20filename:%20%7Brequest.base_filename%7D%22)",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "009395",
+        "hash": "a053e8ec",
+        "encoded": "#%20Create%20filenames",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "009395",
+        "hash": "4ae0f768",
+        "encoded": "pass_filename%20=%20f%22%7Brequest.base_filename%7D_Pass.xlsx%22",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "009395",
+        "hash": "4c1031bc",
+        "encoded": "fail_filename%20=%20f%22%7Brequest.base_filename%7D_Fail.xlsx%22",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "009395",
+        "hash": "c99b6572",
+        "encoded": "zip_filename%20=%20f%22%7Brequest.base_filename%7D_Results.zip%22",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "009395",
+        "hash": "dc26c63d",
+        "encoded": "#%20Initialize%20scraper%20with%20credentials%20if%20provided",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "009395",
+        "hash": "1e5cb6a5",
+        "encoded": "scraper%20=%20ImageScraper(",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "009395",
+        "hash": "20c69a9d",
+        "encoded": "username=request.username,",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "009395",
+        "hash": "1f78ef50",
+        "encoded": "password=request.password",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "009395",
+        "hash": "f71fc212",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "009395",
+        "hash": "d465e322",
+        "encoded": "#%20Create%20Excel%20reports",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "009395",
+        "hash": "1a6e4ec7",
+        "encoded": "logger.info(%22Starting%20image%20scraping%20process...%22)",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "009395",
+        "hash": "40a59ab6",
+        "encoded": "scraper.create_excel_report_for_page(",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "009395",
+        "hash": "9f80e9a3",
+        "encoded": "page_url=request.page_url,",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "009395",
+        "hash": "618a0218",
+        "encoded": "pass_filename=pass_filename,",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "009395",
+        "hash": "affca103",
+        "encoded": "fail_filename=fail_filename",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "009395",
+        "hash": "7d77163d",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "009395",
+        "hash": "ce1eed0d",
+        "encoded": "logger.info(%22Excel%20reports%20created%20successfully%22)",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "009395",
+        "hash": "b38c2371",
+        "encoded": "#%20Read%20Excel%20files%20and%20convert%20to%20base64",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "009395",
+        "hash": "f9a904eb",
+        "encoded": "with%20open(pass_filename,%20'rb')%20as%20f:",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "009395",
+        "hash": "1fc6bdde",
+        "encoded": "pass_file_data%20=%20base64.b64encode(f.read()).decode('utf-8')",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "009395",
+        "hash": "5c6c846f",
+        "encoded": "with%20open(fail_filename,%20'rb')%20as%20f:",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "009395",
+        "hash": "493cfaaf",
+        "encoded": "fail_file_data%20=%20base64.b64encode(f.read()).decode('utf-8')",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "009395",
+        "hash": "22ff2fbd",
+        "encoded": "#%20Create%20ZIP%20file%20containing%20both%20Excel%20files",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "009395",
+        "hash": "9da009ca",
+        "encoded": "zip_buffer%20=%20io.BytesIO()",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "009395",
+        "hash": "567348e8",
+        "encoded": "with%20zipfile.ZipFile(zip_buffer,%20'w',%20zipfile.ZIP_DEFLATED)%20as%20zip_file:",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "009395",
+        "hash": "d0c0c018",
+        "encoded": "zip_file.write(pass_filename,%20arcname=pass_filename)",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "009395",
+        "hash": "141b034b",
+        "encoded": "zip_file.write(fail_filename,%20arcname=fail_filename)",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "009395",
+        "hash": "041e6377",
+        "encoded": "zip_buffer.seek(0)",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "009395",
+        "hash": "2aa333b8",
+        "encoded": "zip_file_data%20=%20base64.b64encode(zip_buffer.read()).decode('utf-8')",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "009395",
+        "hash": "c5cb3608",
+        "encoded": "#%20Clean%20up%20Excel%20files%20from%20disk",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "009395",
+        "hash": "b6c077ca",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "009395",
+        "hash": "92bb2c77",
+        "encoded": "os.remove(pass_filename)",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "009395",
+        "hash": "ef7398ac",
+        "encoded": "os.remove(fail_filename)",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "009395",
+        "hash": "5d59e889",
+        "encoded": "logger.info(%22Cleaned%20up%20temporary%20Excel%20files%22)",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "009395",
+        "hash": "a05ef2db",
+        "encoded": "except%20Exception%20as%20cleanup_error:",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "009395",
+        "hash": "fe567669",
+        "encoded": "logger.warning(f%22Could%20not%20clean%20up%20files:%20%7Bcleanup_error%7D%22)",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "009395",
+        "hash": "35e3f4a6",
+        "encoded": "logger.info(%22Scraping%20completed%20successfully%22)",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "009395",
+        "hash": "f4d17e9a",
+        "encoded": "return%20ScrapeResponse(",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "009395",
+        "hash": "4a6e3ad8",
+        "encoded": "pass_file=pass_file_data,",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "009395",
+        "hash": "f1d3aa00",
+        "encoded": "fail_file=fail_file_data,",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "009395",
+        "hash": "c425d37e",
+        "encoded": "zip_file=zip_file_data,",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "009395",
+        "hash": "f564e83a",
+        "encoded": "pass_filename=pass_filename,",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "009395",
+        "hash": "3957ae11",
+        "encoded": "fail_filename=fail_filename,",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "009395",
+        "hash": "e3985115",
+        "encoded": "zip_filename=zip_filename,",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "009395",
+        "hash": "b20f91cc",
+        "encoded": "message=%22Scraping%20completed%20successfully%22",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "009395",
+        "hash": "9598d44a",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "009395",
+        "hash": "509aae5e",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "009395",
+        "hash": "22553e6f",
+        "encoded": "logger.error(f%22Error%20during%20scraping:%20%7Bstr(e)%7D%22)",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "009395",
+        "hash": "96e1b2a7",
+        "encoded": "raise%20HTTPException(",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "009395",
+        "hash": "75f5d4fc",
+        "encoded": "status_code=500,",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "009395",
+        "hash": "6282ba23",
+        "encoded": "detail=f%22Scraping%20failed:%20%7Bstr(e)%7D%22",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "009395",
+        "hash": "ca70e784",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "009395",
+        "hash": "a3d2fbbd",
+        "encoded": "@app.get(%22/health%22)",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "009395",
+        "hash": "1e08cf23",
+        "encoded": "async%20def%20health_check():",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "009395",
+        "hash": "9952faae",
+        "encoded": "%22%22%22Health%20check%20endpoint%20for%20monitoring%22%22%22",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "009395",
+        "hash": "37bab5b2",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "009395",
+        "hash": "1a5a875e",
+        "encoded": "%22status%22:%20%22healthy%22,",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "009395",
+        "hash": "79846d66",
+        "encoded": "%22service%22:%20%22Image%20Scraper%20API%22",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "009395",
+        "hash": "bbf48fdf",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "009395",
+        "hash": "97cb16aa",
+        "encoded": "if%20__name__%20==%20%22__main__%22:",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "009395",
+        "hash": "86c7165a",
+        "encoded": "import%20uvicorn",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "009395",
+        "hash": "cda080a3",
+        "encoded": "#%20Run%20the%20server",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "009395",
+        "hash": "9b662531",
+        "encoded": "uvicorn.run(",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "009395",
+        "hash": "672d04b0",
+        "encoded": "app,",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "009395",
+        "hash": "aad36f8b",
+        "encoded": "host=%220.0.0.0%22,",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "009395",
+        "hash": "1580ca1d",
+        "encoded": "port=8000,",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "009395",
+        "hash": "446a579d",
+        "encoded": "log_level=%22info%22",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "009395",
+        "hash": "787836bd",
+        "encoded": ")",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
