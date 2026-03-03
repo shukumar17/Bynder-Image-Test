@@ -14,7 +14,7 @@ A Python-based automation tool that scrapes image URLs from web pages, validates
 #### Option 1: Using Git (Recommended)
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone <https://github.com/shukumar17/Bynder-Image-Test.git>
 cd image-scraper
 
 # Create virtual environment
