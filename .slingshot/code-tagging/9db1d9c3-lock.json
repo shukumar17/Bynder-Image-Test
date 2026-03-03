@@ -1,0 +1,753 @@
+{
+  "GITHUB_SETUP.md": {
+    "filename": "GITHUB_SETUP.md",
+    "path": "GITHUB_SETUP.md",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "fd2006": {
+        "user": "Shubham Kumar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1772544798,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {},
+        "hash": "b15a7740",
+        "messageId": "1f0347c8-0f63-4096-bdf5-639853a82f0d",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "fd2006",
+        "hash": "242f2fd5",
+        "encoded": "#%20GitHub%20Repository%20Setup%20Instructions",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "fd2006",
+        "hash": "9c2985a0",
+        "encoded": "##%20%E2%9C%85%20Git%20Repository%20Initialized",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "fd2006",
+        "hash": "5cb53118",
+        "encoded": "Your%20local%20git%20repository%20has%20been%20successfully%20initialized%20with%20the%20initial%20commit:",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "fd2006",
+        "hash": "a281e078",
+        "encoded": "-%20**Commit%20ID**:%20%600beca51%60",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "fd2006",
+        "hash": "bda83475",
+        "encoded": "-%20**Commit%20Message**:%20%22Initial%20commit:%20Image%20Scraper%20and%20Screenshot%20Validator%20tool%22",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "fd2006",
+        "hash": "fbf86d3c",
+        "encoded": "-%20**Files%20Committed**:%2050%20files%20including%20all%20project%20files,%20documentation,%20and%20test%20results",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "fd2006",
+        "hash": "d06fee88",
+        "encoded": "##%20%F0%9F%93%A4%20Next%20Steps:%20Push%20to%20GitHub",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "fd2006",
+        "hash": "fbd9d68a",
+        "encoded": "###%20Option%201:%20Create%20a%20New%20Repository%20on%20GitHub%20(Recommended)",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "fd2006",
+        "hash": "414f23ff",
+        "encoded": "1.%20**Go%20to%20GitHub**%20and%20sign%20in%20to%20your%20account",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "fd2006",
+        "hash": "cfd673a7",
+        "encoded": "-%20Visit:%20https://github.com/new",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "fd2006",
+        "hash": "178eca87",
+        "encoded": "2.%20**Create%20a%20new%20repository**:",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "fd2006",
+        "hash": "4217179c",
+        "encoded": "-%20Repository%20name:%20%60image-scraper-validator%60%20(or%20your%20preferred%20name)",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "fd2006",
+        "hash": "8113f20c",
+        "encoded": "-%20Description:%20%60Python%20tool%20for%20scraping%20image%20URLs%20from%20web%20pages%20and%20validating%20them%20with%20screenshots%60",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "fd2006",
+        "hash": "e8b818db",
+        "encoded": "-%20Visibility:%20Choose%20**Public**%20or%20**Private**",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "fd2006",
+        "hash": "eca5c2fd",
+        "encoded": "-%20**DO%20NOT**%20initialize%20with%20README,%20.gitignore,%20or%20license%20(we%20already%20have%20these)",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "fd2006",
+        "hash": "780d135c",
+        "encoded": "3.%20**Copy%20the%20repository%20URL**%20that%20GitHub%20provides%20(it%20will%20look%20like):",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "fd2006",
+        "hash": "ef150f84",
+        "encoded": "-%20HTTPS:%20%60https://github.com/YOUR_USERNAME/image-scraper-validator.git%60",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "fd2006",
+        "hash": "ae90bf2a",
+        "encoded": "-%20SSH:%20%60git@github.com:YOUR_USERNAME/image-scraper-validator.git%60",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "fd2006",
+        "hash": "ff11a736",
+        "encoded": "4.%20**Run%20these%20commands%20in%20your%20terminal**%20(replace%20%60YOUR_REPO_URL%60%20with%20the%20actual%20URL):",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "fd2006",
+        "hash": "e08c12ef",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "fd2006",
+        "hash": "5987df3f",
+        "encoded": "#%20Add%20the%20remote%20repository",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "fd2006",
+        "hash": "fc60da2e",
+        "encoded": "git%20remote%20add%20origin%20YOUR_REPO_URL",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "fd2006",
+        "hash": "bbbc8306",
+        "encoded": "#%20Rename%20branch%20to%20main%20(if%20you%20prefer%20main%20over%20master)",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "fd2006",
+        "hash": "4fe32e35",
+        "encoded": "git%20branch%20-M%20main",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "fd2006",
+        "hash": "36a4b913",
+        "encoded": "#%20Push%20to%20GitHub",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "fd2006",
+        "hash": "51b110e5",
+        "encoded": "git%20push%20-u%20origin%20main",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "fd2006",
+        "hash": "465274ea",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "fd2006",
+        "hash": "06376d86",
+        "encoded": "**Example%20with%20actual%20URL**:",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "fd2006",
+        "hash": "d17270d5",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "fd2006",
+        "hash": "22cdaa90",
+        "encoded": "git%20remote%20add%20origin%20https://github.com/johndoe/image-scraper-validator.git",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "fd2006",
+        "hash": "3ea4e77a",
+        "encoded": "git%20branch%20-M%20main",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "fd2006",
+        "hash": "d9979417",
+        "encoded": "git%20push%20-u%20origin%20main",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "fd2006",
+        "hash": "32bfda31",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "fd2006",
+        "hash": "005af9fa",
+        "encoded": "###%20Option%202:%20Using%20GitHub%20CLI%20(If%20you%20have%20%60gh%60%20installed)",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "fd2006",
+        "hash": "be207973",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "fd2006",
+        "hash": "8ed8d3c1",
+        "encoded": "#%20Create%20repository%20and%20push%20in%20one%20command",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "fd2006",
+        "hash": "e15a33e8",
+        "encoded": "gh%20repo%20create%20image-scraper-validator%20--public%20--source=.%20--remote=origin%20--push",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "fd2006",
+        "hash": "a9b40cba",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "fd2006",
+        "hash": "52021cf2",
+        "encoded": "###%20Option%203:%20Manual%20Steps%20(Copy-Paste%20Commands)",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "fd2006",
+        "hash": "51eaadc1",
+        "encoded": "**After%20creating%20the%20repository%20on%20GitHub**,%20run%20these%20commands%20one%20by%20one:",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "fd2006",
+        "hash": "58a5b2ce",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "fd2006",
+        "hash": "ac8bb6ec",
+        "encoded": "#%20Step%201:%20Add%20remote%20(replace%20with%20your%20actual%20GitHub%20repository%20URL)",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "fd2006",
+        "hash": "457d8844",
+        "encoded": "git%20remote%20add%20origin%20https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "fd2006",
+        "hash": "402c2621",
+        "encoded": "#%20Step%202:%20Rename%20branch%20to%20main",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "fd2006",
+        "hash": "4c93aa65",
+        "encoded": "git%20branch%20-M%20main",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "fd2006",
+        "hash": "0e5ae650",
+        "encoded": "#%20Step%203:%20Push%20to%20GitHub",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "fd2006",
+        "hash": "82d11121",
+        "encoded": "git%20push%20-u%20origin%20main",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "fd2006",
+        "hash": "7b8bac46",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "fd2006",
+        "hash": "81eb8379",
+        "encoded": "##%20%F0%9F%94%8D%20Verify%20Your%20Repository",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "fd2006",
+        "hash": "6b0f4808",
+        "encoded": "After%20pushing,%20verify%20on%20GitHub:",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "fd2006",
+        "hash": "911228dd",
+        "encoded": "-%20%E2%9C%85%20All%20files%20are%20visible",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "fd2006",
+        "hash": "55064fbe",
+        "encoded": "-%20%E2%9C%85%20README.md%20is%20displayed%20on%20the%20repository%20homepage",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "fd2006",
+        "hash": "58626858",
+        "encoded": "-%20%E2%9C%85%20.gitignore%20is%20working%20(backup%20folder%20and%20screenshots%20are%20excluded)",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "fd2006",
+        "hash": "94364420",
+        "encoded": "##%20%F0%9F%93%9D%20What's%20Included%20in%20Your%20Repository",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "fd2006",
+        "hash": "a37cce81",
+        "encoded": "###%20Main%20Files:",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "fd2006",
+        "hash": "894e0432",
+        "encoded": "-%20%60image_scraper.py%60%20-%20Main%20Python%20script",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "fd2006",
+        "hash": "14d372bf",
+        "encoded": "-%20%60requirements.txt%60%20-%20Python%20dependencies",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "fd2006",
+        "hash": "eb90f93e",
+        "encoded": "-%20%60config.py%60%20-%20Configuration%20file",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "fd2006",
+        "hash": "e0121934",
+        "encoded": "-%20%60README.md%60%20-%20Comprehensive%20documentation",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "fd2006",
+        "hash": "d7a39749",
+        "encoded": "-%20%60USAGE_GUIDE.md%60%20-%20Detailed%20usage%20instructions",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "fd2006",
+        "hash": "57f50c94",
+        "encoded": "-%20%60README_AUTH.md%60%20-%20Authentication%20documentation",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "fd2006",
+        "hash": "de412caf",
+        "encoded": "-%20%60.gitignore%60%20-%20Git%20ignore%20rules",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "fd2006",
+        "hash": "c4ce0646",
+        "encoded": "###%20Excluded%20(via%20.gitignore):",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "fd2006",
+        "hash": "7b2c8168",
+        "encoded": "-%20%60backup/%60%20folder%20-%20Old%20backup%20files",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "fd2006",
+        "hash": "eee0c517",
+        "encoded": "-%20%60screenshots/%60%20-%20Temporary%20screenshot%20files",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "fd2006",
+        "hash": "3db304b2",
+        "encoded": "-%20%60venv/%60%20-%20Virtual%20environment",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "fd2006",
+        "hash": "2f45fefb",
+        "encoded": "-%20%60__pycache__/%60%20-%20Python%20cache",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "fd2006",
+        "hash": "1cc39783",
+        "encoded": "-%20%60.wdm/%60%20-%20WebDriver%20cache",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "fd2006",
+        "hash": "ed314f87",
+        "encoded": "###%20Included%20Test%20Results:",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "fd2006",
+        "hash": "0e1e9297",
+        "encoded": "-%20%60Tests/%60%20folder%20with%20all%20your%20test%20results%20(Excel%20files)",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "fd2006",
+        "hash": "e22bb946",
+        "encoded": "##%20%F0%9F%9A%80%20Share%20with%20Your%20Teammates",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "fd2006",
+        "hash": "d8f3e68b",
+        "encoded": "Once%20pushed%20to%20GitHub,%20share%20the%20repository%20URL%20with%20your%20teammates:",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "fd2006",
+        "hash": "3468b825",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "fd2006",
+        "hash": "763423c0",
+        "encoded": "https://github.com/YOUR_USERNAME/YOUR_REPO_NAME",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "fd2006",
+        "hash": "d31b20af",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "fd2006",
+        "hash": "a880efa0",
+        "encoded": "They%20can%20clone%20it%20using:",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "fd2006",
+        "hash": "74cee3ac",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "fd2006",
+        "hash": "f8837c02",
+        "encoded": "git%20clone%20https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "fd2006",
+        "hash": "c201c2fd",
+        "encoded": "cd%20YOUR_REPO_NAME",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "fd2006",
+        "hash": "f4fc4262",
+        "encoded": "python%20-m%20venv%20venv",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "fd2006",
+        "hash": "e308f6f0",
+        "encoded": "source%20venv/bin/activate%20%20#%20On%20Windows:%20venv%5CScripts%5Cactivate",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "fd2006",
+        "hash": "f9624549",
+        "encoded": "pip%20install%20-r%20requirements.txt",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "fd2006",
+        "hash": "0d88989f",
+        "encoded": "python%20image_scraper.py",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "fd2006",
+        "hash": "2c0ea294",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "fd2006",
+        "hash": "38e6d3b1",
+        "encoded": "##%20%F0%9F%94%84%20Future%20Updates",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "fd2006",
+        "hash": "0366b190",
+        "encoded": "When%20you%20make%20changes%20to%20the%20code,%20commit%20and%20push%20them:",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "fd2006",
+        "hash": "8fa37d0e",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "fd2006",
+        "hash": "0748076c",
+        "encoded": "#%20Stage%20changes",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "fd2006",
+        "hash": "6d09f8f4",
+        "encoded": "git%20add%20.",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "fd2006",
+        "hash": "9964ebe1",
+        "encoded": "#%20Commit%20with%20a%20message",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "fd2006",
+        "hash": "724c9548",
+        "encoded": "git%20commit%20-m%20%22Description%20of%20your%20changes%22",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "fd2006",
+        "hash": "dac908f5",
+        "encoded": "#%20Push%20to%20GitHub",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "fd2006",
+        "hash": "2da60bc1",
+        "encoded": "git%20push",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "fd2006",
+        "hash": "b23b66af",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "fd2006",
+        "hash": "5eccb379",
+        "encoded": "##%20%F0%9F%86%98%20Troubleshooting",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "fd2006",
+        "hash": "1c0dc5c6",
+        "encoded": "###%20Issue:%20%22fatal:%20remote%20origin%20already%20exists%22",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "fd2006",
+        "hash": "8beb4083",
+        "encoded": "**Solution**:%20Remove%20and%20re-add%20the%20remote",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "fd2006",
+        "hash": "313642f5",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "fd2006",
+        "hash": "2de64b67",
+        "encoded": "git%20remote%20remove%20origin",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "fd2006",
+        "hash": "7a499ea2",
+        "encoded": "git%20remote%20add%20origin%20YOUR_REPO_URL",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "fd2006",
+        "hash": "c676fc09",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "fd2006",
+        "hash": "cc1eeca8",
+        "encoded": "###%20Issue:%20%22Permission%20denied%20(publickey)%22",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "fd2006",
+        "hash": "85574670",
+        "encoded": "**Solution**:%20Use%20HTTPS%20URL%20instead%20of%20SSH,%20or%20set%20up%20SSH%20keys",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "fd2006",
+        "hash": "a17d7f88",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "fd2006",
+        "hash": "2d3879a8",
+        "encoded": "#%20Use%20HTTPS%20URL",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "fd2006",
+        "hash": "8411dc9b",
+        "encoded": "git%20remote%20set-url%20origin%20https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "fd2006",
+        "hash": "dc91ebc7",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "fd2006",
+        "hash": "a2f611cb",
+        "encoded": "###%20Issue:%20%22Updates%20were%20rejected%22",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "fd2006",
+        "hash": "0a1b9d10",
+        "encoded": "**Solution**:%20Pull%20first,%20then%20push",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "fd2006",
+        "hash": "12639a26",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "fd2006",
+        "hash": "2c642caf",
+        "encoded": "git%20pull%20origin%20main%20--rebase",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "fd2006",
+        "hash": "7daa7a66",
+        "encoded": "git%20push%20origin%20main",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "fd2006",
+        "hash": "63cdfae9",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "fd2006",
+        "hash": "f91edb42",
+        "encoded": "##%20%F0%9F%93%A7%20Need%20Help?",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "fd2006",
+        "hash": "e916848a",
+        "encoded": "If%20you%20encounter%20any%20issues:",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "fd2006",
+        "hash": "c630214e",
+        "encoded": "1.%20Check%20the%20error%20message%20carefully",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "fd2006",
+        "hash": "b75207df",
+        "encoded": "2.%20Verify%20your%20GitHub%20credentials",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "fd2006",
+        "hash": "742778bf",
+        "encoded": "3.%20Ensure%20you%20have%20internet%20connectivity",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "fd2006",
+        "hash": "7026dd02",
+        "encoded": "4.%20Make%20sure%20the%20repository%20URL%20is%20correct",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "fd2006",
+        "hash": "4136d763",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "fd2006",
+        "hash": "cc94143c",
+        "encoded": "**Note**:%20This%20file%20(%60GITHUB_SETUP.md%60)%20is%20for%20your%20reference%20only.%20You%20can%20delete%20it%20after%20successfully%20pushing%20to%20GitHub,%20or%20keep%20it%20for%20documentation%20purposes.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
