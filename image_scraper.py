@@ -48,7 +48,7 @@ except ImportError:
 class ImageScraper:
     """Scrapes images from URLs and validates them with screenshots."""
 
-    def __init__(self, output_file: str = "Bynder.xlsx", username: str = None, password: str = None, max_workers: int = 5):
+    def __init__(self, output_file: str = "Bynder.xlsx", username: str = None, password: str = None, max_workers: int = 5, initial_url: str = None):
         """
         Initialize the ImageScraper.
 
@@ -57,12 +57,14 @@ class ImageScraper:
             username: Username for HTTP Basic Authentication (optional, uses config.py if not provided)
             password: Password for HTTP Basic Authentication (optional, uses config.py if not provided)
             max_workers: Maximum number of parallel workers for screenshot capture (default: 5)
+            initial_url: URL to visit before starting tests (optional)
         """
         self.output_file = output_file
         self.driver: Optional[webdriver.Chrome] = None
         self.screenshot_dir = "screenshots"
         self.max_workers = max_workers
         self._driver_lock = threading.Lock()
+        self.initial_url = initial_url
         
         # Set authentication credentials
         self.username = username or AUTH_CONFIG.get('username', '')
@@ -83,8 +85,12 @@ class ImageScraper:
             os.makedirs(self.screenshot_dir)
             logger.info(f"Created directory: {self.screenshot_dir}")
 
-    def _create_driver(self) -> webdriver.Chrome:
-        """Create a new Selenium WebDriver instance for parallel execution."""
+    def _create_driver(self, visit_initial: bool = False) -> webdriver.Chrome:
+        """Create a new Selenium WebDriver instance for parallel execution.
+        
+        Args:
+            visit_initial: If True, visit the initial URL (only for the first driver instance)
+        """
         try:
             chrome_options = Options()
             chrome_options.add_argument('--headless')
@@ -107,6 +113,18 @@ class ImageScraper:
                 driver = webdriver.Chrome(options=chrome_options)
             
             driver.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
+            
+            # Visit initial URL ONLY if explicitly requested (first time only)
+            if visit_initial and self.initial_url:
+                try:
+                    logger.info(f"Visiting initial URL: {self.initial_url}")
+                    authenticated_initial_url = self._get_authenticated_url(self.initial_url)
+                    driver.get(authenticated_initial_url)
+                    time.sleep(5)  # Wait for page to load
+                    logger.info("Initial URL visited successfully")
+                except Exception as init_error:
+                    logger.warning(f"Could not visit initial URL: {init_error}")
+            
             return driver
             
         except Exception as e:
@@ -168,6 +186,17 @@ class ImageScraper:
                         raise
                     
                 self.driver.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
+                
+                # Visit initial URL if configured (for session establishment)
+                if self.initial_url:
+                    try:
+                        logger.info(f"Visiting initial URL for session: {self.initial_url}")
+                        authenticated_initial_url = self._get_authenticated_url(self.initial_url)
+                        self.driver.get(authenticated_initial_url)
+                        time.sleep(5)  # Wait for session to establish
+                        logger.info("Initial URL visited, session established")
+                    except Exception as init_error:
+                        logger.warning(f"Could not visit initial URL: {init_error}")
                 
             except Exception as e:
                 logger.error(f"Failed to initialize WebDriver: {e}")
@@ -240,12 +269,13 @@ class ImageScraper:
             logger.warning(f"Could not capture fail scenario screenshot: {e}")
         return None
 
-    def get_image_urls(self, page_url: str) -> List[str]:
+    def get_image_urls(self, page_url: str, use_selenium: bool = False) -> List[str]:
         """
         Extract image URLs ONLY from Picture tags, tile-swatches class, and nosto-container class elements.
 
         Args:
             page_url: The URL of the page to scrape
+            use_selenium: If True, use Selenium to fetch page (maintains session from initial URL)
 
         Returns:
             List of image URLs found from <picture> tags and elements with class 'tile-swatches' and 'nosto-container'
@@ -257,27 +287,44 @@ class ImageScraper:
             parsed_url = urlparse(page_url)
             if not parsed_url.scheme or not parsed_url.netloc:
                 logger.error(f"Invalid URL: {page_url}")
-                return image_urls
+                return []
 
             logger.info(f"Fetching images from: {page_url}")
             logger.info("Targeting ONLY <picture> tags, 'tile-swatches' class, and 'nosto-container' class elements")
             
-            # Fetch page content with authentication
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            }
-            
-            # Add HTTP Basic Authentication if credentials are provided
-            auth = None
-            if self.username and self.password:
-                auth = HTTPBasicAuth(self.username, self.password)
-                logger.info(f"Using HTTP Basic Authentication for: {parsed_url.netloc}")
-            
-            response = requests.get(page_url, headers=headers, auth=auth, timeout=REQUEST_TIMEOUT)
-            response.raise_for_status()
-            
-            # Parse HTML
-            soup = BeautifulSoup(response.content, 'html.parser')
+            # If initial_url is set, use Selenium to maintain session
+            if self.initial_url or use_selenium:
+                logger.info("Using Selenium to fetch page content (session-based)")
+                if not self.driver:
+                    self._initialize_driver()
+                
+                # Now visit the target page in the same session (initial URL already visited in _initialize_driver)
+                authenticated_page_url = self._get_authenticated_url(page_url)
+                logger.info(f"Opening target page in same session: {page_url}")
+                self.driver.get(authenticated_page_url)
+                time.sleep(3)  # Wait for page to load
+                
+                # Get page source from Selenium
+                page_content = self.driver.page_source
+                soup = BeautifulSoup(page_content, 'html.parser')
+            else:
+                # Use requests library (original behavior when no initial URL)
+                logger.info("Using requests library to fetch page content")
+                headers = {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                }
+                
+                # Add HTTP Basic Authentication if credentials are provided
+                auth = None
+                if self.username and self.password:
+                    auth = HTTPBasicAuth(self.username, self.password)
+                    logger.info(f"Using HTTP Basic Authentication for: {parsed_url.netloc}")
+                
+                response = requests.get(page_url, headers=headers, auth=auth, timeout=REQUEST_TIMEOUT)
+                response.raise_for_status()
+                
+                # Parse HTML
+                soup = BeautifulSoup(response.content, 'html.parser')
             
             # Strategy 1: Find all <picture> tags and extract images from them
             picture_tags = soup.find_all('picture')
@@ -463,7 +510,55 @@ class ImageScraper:
                             if absolute_url not in image_urls:
                                 image_urls.append(absolute_url)
             
-            logger.info(f"Total: Found {len(image_urls)} unique image URLs from <picture> tags, 'tile-swatches' class, and 'nosto-container' class")
+            # Strategy 4: Find all <video> tags and extract video source URLs
+            video_tags = soup.find_all('video')
+            logger.info(f"Found {len(video_tags)} <video> tags")
+            
+            for video in video_tags:
+                # Check for <source> tags within <video>
+                sources = video.find_all('source')
+                for source in sources:
+                    src = source.get('src')
+                    if src:
+                        absolute_url = urljoin(page_url, src)
+                        if absolute_url not in image_urls:
+                            image_urls.append(absolute_url)
+                            logger.info(f"Found video source: {absolute_url}")
+                
+                # Also check for src attribute directly on video tag
+                video_src = video.get('src')
+                if video_src:
+                    absolute_url = urljoin(page_url, video_src)
+                    if absolute_url not in image_urls:
+                        image_urls.append(absolute_url)
+                        logger.info(f"Found video source: {absolute_url}")
+            
+            # Strategy 5: Find all elements with class 'product-tile' or 'swiper-slide' and extract images
+            product_tiles = soup.find_all(class_=['product-tile', 'swiper-slide'])
+            logger.info(f"Found {len(product_tiles)} elements with class 'product-tile' or 'swiper-slide'")
+            
+            for tile in product_tiles:
+                # Find all img tags within product-tile/swiper-slide
+                img_tags = tile.find_all('img')
+                for img in img_tags:
+                    srcset = img.get('srcset')
+                    src = img.get('src') or img.get('data-src')
+                    
+                    if srcset:
+                        # srcset can contain multiple URLs separated by commas
+                        url_parts = srcset.split(',')
+                        for url_part in url_parts:
+                            url_clean = url_part.strip().split()[0] if url_part.strip() else ''
+                            if url_clean:
+                                absolute_url = urljoin(page_url, url_clean)
+                                if absolute_url not in image_urls:
+                                    image_urls.append(absolute_url)
+                    elif src:
+                        absolute_url = urljoin(page_url, src)
+                        if absolute_url not in image_urls:
+                            image_urls.append(absolute_url)
+            
+            logger.info(f"Total: Found {len(image_urls)} unique image/video URLs from <picture> tags, 'tile-swatches' class, 'nosto-container' class, 'product-tile' class, 'swiper-slide' class, and <video> tags")
             
             # Filter to only include HTTPS URLs
             https_urls = [url for url in image_urls if url.startswith('https://')]
@@ -473,33 +568,69 @@ class ImageScraper:
                 logger.info(f"Filtered out {filtered_count} non-HTTPS URLs")
             
             logger.info(f"Final count: {len(https_urls)} HTTPS image URLs")
+            return https_urls
             
         except requests.RequestException as e:
             logger.error(f"Error fetching page {page_url}: {e}")
+            return []  # Return empty list on error
         except Exception as e:
             logger.error(f"Unexpected error processing {page_url}: {e}")
-        
-        return https_urls
+            return []  # Return empty list on error
 
-    def _take_screenshot_worker(self, image_url: str, index: int) -> Tuple[str, Optional[str], str, str]:
+    def _take_screenshot_worker(self, image_url: str, index: int, is_first: bool = False) -> Tuple[str, Optional[str], str, str]:
         """
         Worker function for parallel screenshot capture - ONLY captures screenshots for failed cases.
         
         Args:
             image_url: URL of the image to screenshot
             index: Index for naming the screenshot file
+            is_first: If True, this is the first worker and should visit initial URL
         
         Returns:
             Tuple of (image_url, screenshot_path, status, failure_reason)
         """
         driver = None
         try:
-            # Check if URL contains 'amplience' - fail if found
+            # Check if URL is a video file (mp4, webm, ogg, etc.)
+            is_video = any(ext in image_url.lower() for ext in ['.mp4', '.webm', '.ogg', '.mov', '.avi'])
+            
+            # For video URLs: Pass if from Bynder, Fail if from Amplience
+            if is_video:
+                if 'bynder.com' in image_url.lower():
+                    logger.info(f"Video from Bynder (Pass): {image_url}")
+                    return image_url, None, "Pass", ""
+                elif 'amplience' in image_url.lower():
+                    logger.warning(f"Video from Amplience (Fail): {image_url}")
+                    # Create driver for fail scenario screenshot
+                    driver = self._create_driver(visit_initial=is_first)
+                    authenticated_url = self._get_authenticated_url(image_url)
+                    
+                    # Open in new tab if initial URL was visited
+                    if is_first and self.initial_url:
+                        driver.execute_script("window.open('');")
+                        driver.switch_to.window(driver.window_handles[-1])
+                    
+                    driver.get(authenticated_url)
+                    time.sleep(2)
+                    
+                    screenshot_filename = f"screenshot_{index}.png"
+                    screenshot_path = os.path.join(self.screenshot_dir, screenshot_filename)
+                    driver.save_screenshot(screenshot_path)
+                    
+                    return image_url, screenshot_path if os.path.exists(screenshot_path) else None, "Fail", "Video from Amplience"
+            
+            # Check if URL contains 'amplience' - fail if found (for images)
             if 'amplience' in image_url.lower():
                 logger.warning(f"Image Coming from Amplience: {image_url}")
                 # Create driver for fail scenario screenshot
-                driver = self._create_driver()
+                driver = self._create_driver(visit_initial=is_first)
                 authenticated_url = self._get_authenticated_url(image_url)
+                
+                # Open in new tab if initial URL was visited
+                if is_first and self.initial_url:
+                    driver.execute_script("window.open('');")
+                    driver.switch_to.window(driver.window_handles[-1])
+                
                 driver.get(authenticated_url)
                 time.sleep(2)
                 
@@ -510,12 +641,17 @@ class ImageScraper:
                 return image_url, screenshot_path if os.path.exists(screenshot_path) else None, "Fail", "Amplience found in URL"
             
             # Create a new driver instance for this worker
-            driver = self._create_driver()
+            driver = self._create_driver(visit_initial=is_first)
             
             logger.info(f"Validating image URL: {image_url}")
             
             # Get authenticated URL
             authenticated_url = self._get_authenticated_url(image_url)
+            
+            # Open in new tab if initial URL was visited, otherwise use current tab
+            if is_first and self.initial_url:
+                driver.execute_script("window.open('');")
+                driver.switch_to.window(driver.window_handles[-1])
             
             # Navigate to the image URL
             driver.get(authenticated_url)
@@ -687,9 +823,9 @@ class ImageScraper:
                 screenshot_results = {}
                 
                 with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
-                    # Submit all screenshot tasks
+                    # Submit all screenshot tasks - first task visits initial URL
                     future_to_url = {
-                        executor.submit(self._take_screenshot_worker, img_url, image_index + idx): (img_url, image_index + idx)
+                        executor.submit(self._take_screenshot_worker, img_url, image_index + idx, idx == 0): (img_url, image_index + idx)
                         for idx, img_url in enumerate(image_urls)
                     }
                     
@@ -867,18 +1003,21 @@ def main() -> None:
     print("This tool will:")
     print("1. Visit each page URL you provide")
     print("2. Find image URLs from <picture> tags, 'tile-swatches' class, and 'nosto-container' class")
-    print("3. Filter to only include HTTPS URLs")
-    print("4. Create separate Pass and Fail Excel files for each page URL")
-    print("5. Validate each image IN PARALLEL (faster processing)")
-    print("6. Take screenshots ONLY for FAILED cases")
-    print("7. Add screenshots to Fail Excel report")
-    print("8. Delete screenshots folder after saving to Excel")
-    print("9. Fail tests for:")
+    print("3. Find video URLs from <video> tags")
+    print("4. Filter to only include HTTPS URLs")
+    print("5. Create separate Pass and Fail Excel files for each page URL")
+    print("6. Validate each image/video IN PARALLEL (faster processing)")
+    print("7. Take screenshots ONLY for FAILED cases")
+    print("8. Add screenshots to Fail Excel report")
+    print("9. Delete screenshots folder after saving to Excel")
+    print("10. Fail tests for:")
     print("   - Non-HTTPS URLs")
-    print("   - Amplience URLs")
+    print("   - Amplience URLs (images and videos)")
     print("   - 'No results for url found: consider case sensitivity'")
     print("   - 'Bad Request' errors")
-    print("   - Pages with no images")
+    print("   - Pages with no images/videos")
+    print("11. Pass tests for:")
+    print("   - Videos from Bynder (marcjacobs.bynder.com)")
     print()
     
     # Get URLs from user input
@@ -916,6 +1055,22 @@ def main() -> None:
     else:
         print("✓ Proceeding without authentication")
     
+    # Ask for initial URL to visit before tests
+    print("\n" + "="*60)
+    visit_initial = input("Do you want to visit a URL before tests start? (yes/no): ").strip().lower()
+    
+    initial_url = None
+    if visit_initial in ['yes', 'y']:
+        initial_url = input("Enter the URL to visit before tests start: ").strip()
+        if initial_url:
+            print(f"✓ Will visit {initial_url} before each test starts")
+            print("✓ Tests will run in new tabs")
+        else:
+            print("⚠ Warning: Empty URL provided. Proceeding without initial URL.")
+            initial_url = None
+    else:
+        print("✓ Proceeding without initial URL visit")
+    
     # Set parallel execution to 10 workers (no user prompt needed)
     max_workers = 10
     print("="*60)
@@ -925,8 +1080,8 @@ def main() -> None:
     print(f"\nProcessing {len(urls)} page URL(s)...")
     print("You will be asked to provide base filename for each page (Pass and Fail files will be created).\n")
     
-    # Create scraper with user-provided credentials and parallel workers
-    scraper = ImageScraper(username=username, password=password, max_workers=max_workers)
+    # Create scraper with user-provided credentials, parallel workers, and initial URL
+    scraper = ImageScraper(username=username, password=password, max_workers=max_workers, initial_url=initial_url)
     scraper.run_with_page_wise_excel(urls)
     
     print("\n" + "=" * 60)
